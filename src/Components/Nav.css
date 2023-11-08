@@ -1,0 +1,48 @@
+.nav__background {
+  width: 100%;
+  height: 5em;
+  background-color: var(--purple);
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+.nav__searchBar {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 10em;
+  border: 0.15em solid lightgrey;
+  padding: 0 1em;
+}
+
+.nav__searchBar > input {
+  flex: 1;
+  border: none;
+  font-size: .9em;
+  outline: none;
+  font-weight: 300;
+}
+
+.nav__shortcuts {
+  flex: 0.3;
+}
+
+.nav__tab {
+  position: fixed;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10em;
+  height: 3em;
+  background-color: var(--purple);
+}

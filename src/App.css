@@ -3,9 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   z-index: 1;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 html{
   scroll-behavior: smooth;
-  background-color: var(--white);
+  scrollbar-width: 0;
+}
+
+html::-webkit-scrollbar{
+  display: none;
 }
