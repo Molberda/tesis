@@ -4,3 +4,8 @@
   box-sizing: border-box;
   z-index: 1;
 }
+
+html{
+  scroll-behavior: smooth;
+  background-color: var(--white);
+}
