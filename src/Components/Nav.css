@@ -15,8 +15,9 @@ nav {
   gap: 2em;
 }
 
-.nav__logo{
-  width: 8em;
+.nav__icon > .MuiSvgIcon-root{
+  color: var(--orange);
+  font-size: 3em;
 }
 
 .nav__searchBar {
@@ -67,6 +68,11 @@ nav {
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
   gap: .5em;
+}
+
+
+.nav__logo{
+  width: 12em;
 }
 
 .links__list{
