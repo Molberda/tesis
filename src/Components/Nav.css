@@ -15,7 +15,7 @@ nav {
   gap: 2em;
 }
 
-.nav__icon > .MuiSvgIcon-root{
+.nav__icon > .MuiSvgIcon-root {
   color: var(--orange);
   font-size: 3em;
 }
@@ -23,7 +23,7 @@ nav {
 .nav__searchBar {
   display: flex;
   align-items: center;
-  flex: .7;
+  flex: 0.7;
   height: 2.5em;
   background-color: white;
   border-radius: 10em;
@@ -50,7 +50,13 @@ nav {
 }
 
 .nav__shortcuts {
+  display: flex;
   flex: 0.3;
+}
+
+.nav__shortcuts > a > button {
+  color: var(--brown);
+  font-family: "Michroma", sans-serif;
 }
 
 .nav__tab {
@@ -59,39 +65,52 @@ nav {
   justify-content: space-evenly;
   position: fixed;
   flex-direction: column;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   top: 5em;
   left: 50%;
   min-width: 50em;
   transform: translateX(-50%);
   background-color: var(--purple);
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  gap: .5em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  gap: 0.5em;
 }
 
-
-.nav__logo{
+.nav__logo {
   width: 12em;
 }
 
-.links__list{
+.links__list {
   display: flex;
   width: 100%;
-  gap: .5em;
+  gap: 0.5em;
 }
 
-.links__list > a, 
+.links__list > a,
 .links__list > a > button {
   color: var(--brown);
-  font-family: 'Michroma', sans-serif;
   height: 100%;
 }
 
-.links__list > a{
+.links__list > a {
   flex: 1;
 }
 
-.links__list > a > button{
+.links__list > a > button {
   width: 100%;
+}
+
+.active {
+  border-radius: 4px;
+  border: 1px solid var(--orange);
+}
+
+.active .navLink{
+  color: var(--orange);
+}
+
+.navLink{
+  font-size: 1.2em;
+  font-family: "Michroma", sans-serif;
+  font-weight: normal;
 }

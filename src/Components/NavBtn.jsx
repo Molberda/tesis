@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const NavBtn = ({ name, link }) => {
   return (
     <NavLink to={link}>
-      <Button>{name}</Button>
+      <Button><h1 className="navLink">{name}</h1></Button>
     </NavLink>
   );
 };
