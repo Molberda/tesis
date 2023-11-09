@@ -12,7 +12,7 @@ const Nav = () => {
         <SearchBar/>
         <div className="nav__shortcuts"></div>
       </nav>
-      <div className="nav__tab"><p>testing</p></div>
+      <div className="nav__tab"></div>
     </div>
   );
 };

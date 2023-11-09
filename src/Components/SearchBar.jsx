@@ -4,7 +4,7 @@ import React from 'react';
 const SearchBar = () => {
     return (
         <div className='nav__searchBar'>
-            <input type="text" />
+            <input className='searchBar__input' type="text" />
             <SearchOutlined/>
         </div>
     );
