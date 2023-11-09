@@ -55,13 +55,37 @@ nav {
 .nav__tab {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: fixed;
+  flex-direction: column;
+  padding: .5em 1em;
   top: 5em;
   left: 50%;
+  min-width: 50em;
   transform: translateX(-50%);
-  width: 60em;
-  height: 3em;
   background-color: var(--purple);
   border-bottom-left-radius: .5em;
   border-bottom-right-radius: .5em;
+  gap: .5em;
+}
+
+.links__list{
+  display: flex;
+  width: 100%;
+  gap: .5em;
+}
+
+.links__list > a, 
+.links__list > a > button {
+  color: var(--brown);
+  font-family: 'Michroma', sans-serif;
+  height: 100%;
+}
+
+.links__list > a{
+  flex: 1;
+}
+
+.links__list > a > button{
+  width: 100%;
 }

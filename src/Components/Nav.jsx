@@ -11,9 +11,9 @@ const Nav = () => {
   return (
     <div className="nav__background">
       <nav>
-        <figure className="nav__logo" onClick={() => navTo('/')}>
+        {/* <figure className="nav__logo" onClick={() => navTo('/')}>
             <img src={logo} alt="" />
-        </figure>
+        </figure> */}
         <SearchBar/>
         <div className="nav__shortcuts"></div>
       </nav>
