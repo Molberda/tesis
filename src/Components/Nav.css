@@ -12,12 +12,17 @@ nav {
   max-width: 1200px;
   padding: 0 2em;
   margin: 0 auto;
+  gap: 2em;
+}
+
+.nav__logo{
+  width: 8em;
 }
 
 .nav__searchBar {
   display: flex;
   align-items: center;
-  flex: 0.5;
+  flex: .7;
   height: 2.5em;
   background-color: white;
   border-radius: 10em;
@@ -54,7 +59,9 @@ nav {
   top: 5em;
   left: 50%;
   transform: translateX(-50%);
-  width: 10em;
+  width: 60em;
   height: 3em;
   background-color: var(--purple);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
 }
