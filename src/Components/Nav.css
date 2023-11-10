@@ -12,7 +12,7 @@ nav {
   max-width: 1200px;
   padding: 0 2em;
   margin: 0 auto;
-  gap: 2em;
+  gap: 1em;
 }
 
 .nav__icon > .MuiSvgIcon-root {
@@ -23,9 +23,9 @@ nav {
 .nav__searchBar {
   display: flex;
   align-items: center;
-  flex: 0.7;
+  flex: 0.55;
   height: 2.5em;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 10em;
   border: 0.15em solid lightgrey;
   padding: 0 1em;
@@ -33,7 +33,7 @@ nav {
 }
 .nav__searchBar:hover,
 .nav__searchBar:hover .searchBar__input {
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(255, 255, 255);
 }
 
 .searchBar__input {
@@ -42,6 +42,7 @@ nav {
   font-size: 0.9em;
   outline: none;
   font-weight: 300;
+  background-color: var(--white);
   transition: all 300ms ease;
 }
 
@@ -51,10 +52,12 @@ nav {
 
 .nav__shortcuts {
   display: flex;
-  flex: 0.3;
+  gap: .5em;
+  flex: 0.45;
 }
 
 .nav__shortcuts > a > button {
+  width: 100%;
   color: var(--brown);
   font-family: "Michroma", sans-serif;
 }
