@@ -1,7 +1,8 @@
 #root{
   --white: #efe9e6;
   --brown: #4b311b;
-  --purple: #b2abf2;
+  /* --purple: #b2abf2;  original*/
+  --purple: #c2bcf0;
   --orange: #f45415;
   --blue: #2081C3;
   --green: #98ce00;
