@@ -19,6 +19,9 @@ const Nav = () => {
           <NavLink to='/miLista'>
             <Button endIcon={<ListAltOutlined />}><h1 className="navLink">Mi Lista</h1></Button>
           </NavLink>
+          <NavLink to='/miLista'>
+            <Button endIcon={<ListAltOutlined />}><h1 className="navLink">Mi Lista</h1></Button>
+          </NavLink>
         </div>
       </nav>
       <NavTab />
