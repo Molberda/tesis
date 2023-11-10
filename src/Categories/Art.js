@@ -1,5 +1,6 @@
-export const Art = [
+export const ArtData = [
     {
+        id: 0,
         name: 'Elegias al ruido y al tiempo',
         artist1: 'Abril Hurtado',
         artist2: 'Joaquin Restrepo',

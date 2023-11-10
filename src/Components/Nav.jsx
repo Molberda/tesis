@@ -19,7 +19,7 @@ const Nav = () => {
           <NavLink to='/miLista'>
             <Button endIcon={<ListAltOutlined />}><h1 className="navLink">Mi Lista</h1></Button>
           </NavLink>
-          <NavLink to='/miLista'>
+          <NavLink to='/destacados'>
             <Button endIcon={<StarBorderOutlined />}><h1 className="navLink">Destacados</h1></Button>
           </NavLink>
         </div>

@@ -5,6 +5,18 @@
   position: fixed;
 }
 
+.nav__background::before,
+.nav__tab::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1em 0.75em var(--purple);
+  border-radius: 0.5em;
+  opacity: .85;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -13,6 +25,10 @@ nav {
   padding: 0 2em;
   margin: 0 auto;
   gap: 1em;
+}
+
+.nav__icon:hover{
+  cursor: pointer;
 }
 
 .nav__icon > .MuiSvgIcon-root {
@@ -52,7 +68,7 @@ nav {
 
 .nav__shortcuts {
   display: flex;
-  gap: .5em;
+  gap: 0.5em;
   flex: 0.45;
 }
 
@@ -95,7 +111,7 @@ nav {
   height: 100%;
 }
 
-.links__list > a, 
+.links__list > a,
 .nav__shortcuts > a {
   flex: 1;
   border-radius: 4px;
@@ -108,9 +124,9 @@ nav {
 }
 
 .active,
-.links__list > a:hover, 
+.links__list > a:hover,
 .nav__shortcuts > a:hover {
-border-color: var(--orange) !important;
+  border-color: var(--orange) !important;
 }
 
 .active .navLink,
