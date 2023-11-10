@@ -110,7 +110,7 @@ nav {
 .active,
 .links__list > a:hover, 
 .nav__shortcuts > a:hover {
-border-color: var(--orange);
+border-color: var(--orange) !important;
 }
 
 .active .navLink,

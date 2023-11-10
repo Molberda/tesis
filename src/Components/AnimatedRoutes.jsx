@@ -6,6 +6,7 @@ const AnimatedRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<Home/>}/>
+            <Route path='/arte' element={<Home/>}/>
         </Routes>
     );
 }
