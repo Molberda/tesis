@@ -1,0 +1,7 @@
+#art{
+    flex-direction: column;
+}
+
+.artMap__text{
+    color: var(--white);
+}

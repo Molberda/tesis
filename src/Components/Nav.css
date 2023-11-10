@@ -1,8 +1,9 @@
 .nav__background {
   width: 100%;
-  height: 5em;
+  height: 4em;
   background-color: var(--purple);
   position: fixed;
+  z-index: 10;
 }
 
 .nav__background::before,
@@ -12,7 +13,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 1em 0.75em var(--purple);
+  box-shadow: 0 0 1em 0.25em var(--purple);
   border-radius: 0.5em;
   opacity: .85;
 }
@@ -83,20 +84,20 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 0.5em 1em;
-  top: 5em;
+  top: 4em;
   left: 50%;
   min-width: 50em;
   transform: translateX(-50%);
   background-color: var(--purple);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  gap: 0.5em;
+  gap: 2em;
 }
 
 .nav__logo {
-  width: 12em;
+  width: 8em;
 }
 
 .links__list {
@@ -135,7 +136,7 @@ nav {
 }
 
 .navLink {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "Michroma", sans-serif;
   font-weight: normal;
 }
