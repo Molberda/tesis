@@ -105,11 +105,12 @@ nav {
   border: 1px solid var(--orange);
 }
 
-.active .navLink{
+.active .navLink,
+.active .MuiButton-endIcon {
   color: var(--orange);
 }
 
-.navLink{
+.navLink {
   font-size: 1.2em;
   font-family: "Michroma", sans-serif;
   font-weight: normal;
