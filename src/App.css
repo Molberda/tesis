@@ -44,3 +44,7 @@ section{
   padding: 0 2em;
   margin: 0 auto;
 }
+
+button{
+  text-transform:capitalize!important;
+}

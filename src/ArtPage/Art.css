@@ -1,7 +1,24 @@
-#art{
-    flex-direction: column;
+#art {
+  flex-direction: column;
 }
 
-.artMap__text{
-    color: var(--white);
+.artMap__container {
+  position: relative;
+}
+
+.artMap__hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 300ms ease;
+  background-color: #24242483;
+  z-index: 0;
+}
+
+.artMap__container:hover .artMap__hover {
+  opacity: 1;
+  z-index: 10;
 }
