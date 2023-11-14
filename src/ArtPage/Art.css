@@ -30,6 +30,7 @@
 .artMap__title {
   color: var(--white);
   font-size: 3em;
+  letter-spacing: .2em;
 }
 
 .artMap__hover > button {
