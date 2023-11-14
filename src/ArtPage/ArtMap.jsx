@@ -1,10 +1,10 @@
+import { ArrowOutward } from "@mui/icons-material";
 import { Button } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const ArtMap = ({ item }) => {
-
-  const navTo = useNavigate()
+  const navTo = useNavigate();
   return (
     <div className="artMap__container">
       <figure className="artMap__img">
@@ -12,7 +12,13 @@ const ArtMap = ({ item }) => {
       </figure>
       <div className="artMap__hover">
         <h1 className="artMap__title">{item.name}</h1>
-        <Button onClick={() => navTo(`${item.id}`)}>Ver Projecto</Button>
+        <Button
+          className="artMap__btn"
+          endIcon={<ArrowOutward />}
+          onClick={() => navTo(`${item.id}`)}
+        >
+          Ver Projecto
+        </Button>
       </div>
     </div>
   );

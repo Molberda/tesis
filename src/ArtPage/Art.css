@@ -27,7 +27,16 @@
   z-index: 10;
 }
 
-.artMap__title{
-    color: var(--white);
-    font-size: 3em;
+.artMap__title {
+  color: var(--white);
+  font-size: 3em;
+}
+
+.artMap__hover > button {
+  font-size: 1.5em;
+  color: var(--white);
+}
+
+.artMap__btn > span > .MuiSvgIcon-root {
+  font-size: 1.2em;
 }

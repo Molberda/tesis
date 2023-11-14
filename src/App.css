@@ -29,11 +29,11 @@ figure {
   padding-top: 4em;
 }
 
-section{
+section {
   display: flex;
 }
 
-.container{
+.container {
   width: 100%;
   min-height: 100%;
 }
@@ -45,6 +45,10 @@ section{
   margin: 0 auto;
 }
 
-button{
-  text-transform:capitalize!important;
+button {
+  text-transform: capitalize !important;
+}
+
+h1 {
+  font-family: "Michroma", sans-serif;
 }
