@@ -8,6 +8,7 @@ const ArtMap = ({ item }) => {
         <img src={item.mainImg} alt="" />
       </figure>
       <div className="artMap__hover">
+        <h1 className="artMap__title">{item.name}</h1>
         <Button>Ver Projecto</Button>
       </div>
     </div>
