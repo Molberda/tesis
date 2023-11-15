@@ -7,6 +7,7 @@
 }
 
 .artMap__hover {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +31,7 @@
 .artMap__title {
   color: var(--white);
   font-size: 3em;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
 }
 
 .artMap__hover > button {

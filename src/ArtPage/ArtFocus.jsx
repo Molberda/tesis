@@ -12,6 +12,9 @@ const ArtFocus = () => {
       <div className="artFocus__container top__container container">
         <div className="artFocus__row row">
           <h1>{project.name}</h1>
+          <div className="artFocus__gallery">
+            
+          </div>
           <p>{project.description1}</p>
           <p>{project.description2}</p>
         </div>

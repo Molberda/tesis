@@ -10,7 +10,7 @@ const ArtMap = ({ item }) => {
       <figure className="artMap__img">
         <img src={item.mainImg} alt="" />
       </figure>
-      <div className="artMap__hover">
+      <div className="artMap__hover" onClick={() => navTo(`${item.id}`)}>
         <h1 className="artMap__title">{item.name}</h1>
         <Button
           className="artMap__btn"
