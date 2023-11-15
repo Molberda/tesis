@@ -2,6 +2,7 @@ import React from "react";
 import "./ArtFocus.css";
 import { useParams } from "react-router-dom";
 import { ArtData } from "../Categories/Art";
+import Polaroid from "../Components/Polaroid";
 
 const ArtFocus = () => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ const ArtFocus = () => {
         <div className="artFocus__row row">
           <h1>{project.name}</h1>
           <div className="artFocus__gallery">
-            
+            <Polaroid />
           </div>
           <p>{project.description1}</p>
           <p>{project.description2}</p>
