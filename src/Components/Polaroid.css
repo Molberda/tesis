@@ -1,0 +1,15 @@
+.polaroid{
+    position: relative;
+    width: 20em;
+}
+
+.frame{
+    z-index: 2;
+}
+
+.framed__img{
+    position: absolute;
+    width: 85%;
+    top: 2em;
+    left: 1.5em;
+}

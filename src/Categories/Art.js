@@ -1,11 +1,13 @@
 import arte1Main from "../Assets/Arte1/Arte1Main.jpeg";
 import arte2Main from "../Assets/Arte2/Arte2Main.png";
+import arte2Aut from "../Assets/Arte2/Arte2Aut.jpeg";
 
 export const ArtData = [
   {
     id: 0,
     name: "Arrancar los Ojos",
     artist1: "Gabriela Golder",
+    artist1Img: arte2Aut,
     mainImg: arte2Main,
     addImg1: "",
     addImg2: "",

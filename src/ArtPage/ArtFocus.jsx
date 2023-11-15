@@ -14,7 +14,7 @@ const ArtFocus = () => {
         <div className="artFocus__row row">
           <h1>{project.name}</h1>
           <div className="artFocus__gallery">
-            <Polaroid />
+            <Polaroid artist={project.artist1Img}/>
           </div>
           <p>{project.description1}</p>
           <p>{project.description2}</p>
