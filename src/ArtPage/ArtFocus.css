@@ -1,3 +1,11 @@
 .artFocus__row{
     flex-direction: column;
 }
+
+.artFocus__gallery{
+    display: flex;
+}
+
+.artFocus__gallery--main{
+    border-radius: .5em;
+}

@@ -14,7 +14,12 @@ const ArtFocus = () => {
         <div className="artFocus__row row">
           <h1>{project.name}</h1>
           <div className="artFocus__gallery">
-            <Polaroid artist={project.artist1Img}/>
+            <div className="artFocus__gallery--portraits">
+              <Polaroid artist={project.artist1} artistImg={project.artist1Img} />
+            </div>
+            <figure className="artFocus__gallery--main">
+              <img src={project.mainImg} alt="" />
+            </figure>
           </div>
           <p>{project.description1}</p>
           <p>{project.description2}</p>
