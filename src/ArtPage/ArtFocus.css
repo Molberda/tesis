@@ -1,9 +1,26 @@
 .artFocus__row{
     flex-direction: column;
+    gap: 2em;
+}
+
+.artFocus__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.artFocus__header > button{
+    font-family: "Michroma", sans-serif;
+    font-size: 1.5em;
+    color: var(--green);
+}
+.artFocus__header > button > span > svg{
+    font-size: 1.25em !important;
 }
 
 .artFocus__gallery{
     display: flex;
+    gap: 2em;
 }
 
 .artFocus__gallery--main{

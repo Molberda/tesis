@@ -1,6 +1,8 @@
 import arte1Main from "../Assets/Arte1/Arte1Main.jpeg";
 import arte2Main from "../Assets/Arte2/Arte2Main.png";
+import arte3Main from "../Assets/Arte3/Arte3Main.jpeg";
 import arte2Aut from "../Assets/Arte2/Arte2Aut.jpeg";
+import arte3Aut from "../Assets/Arte3/Arte3Aut.jpg";
 
 export const ArtData = [
   {
@@ -28,6 +30,21 @@ export const ArtData = [
     artist5: "Sandra Rengifo",
     artist6: "Santiago Reyes",
     mainImg: arte1Main,
+    addImg1: "",
+    addImg2: "",
+    addImg3: "",
+    subtitle: "Exposición colectiva, cementerio Alemán de Bogotá",
+    description1:
+      "El cementerio Alemán de Bogotá abre sus puertas al público y recibe la exposición Elegías al ruido y al tiempo con la curaduría de Paul Sebastian Mesa.",
+    description2:
+      "Esta muestra, resulta de un proceso investigativo y de reflexión, recurre al espacio del cementerio para evaluar cómo lo conclusivo otorga sentido en el ahora, donde se evitan los cierres y nos pensamos eternos.",
+  },
+  {
+    id: 2,
+    name: "Anima Hibrida",
+    artist1: "Maria Morales",
+    artist1Img: arte3Aut,
+    mainImg: arte3Main,
     addImg1: "",
     addImg2: "",
     addImg3: "",
