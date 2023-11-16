@@ -9,12 +9,14 @@
     justify-content: space-between;
 }
 
-.artFocus__header > button{
+.artFocus__header > button {
     font-family: "Michroma", sans-serif;
+    font-weight: 600;
     font-size: 1.5em;
-    color: var(--green);
+    color: var(--blue);
 }
 .artFocus__header > button > span > svg{
+    margin-top: .1em;
     font-size: 1.25em !important;
 }
 
@@ -25,4 +27,28 @@
 
 .artFocus__gallery--main{
     border-radius: .5em;
+}
+
+.artFocus__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.artFocus__text > p {
+    text-align: justify;
+    font-size: 1.3em;
+    color: var(--brown);
+}
+ 
+.artFocus__text > button{
+    margin-right: auto;
+    font-family: "Michroma", sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: var(--blue);
+}
+
+.artFocus__text > button > span > svg{
+    margin-top: .1em;
+    font-size: 1.25em !important;
 }

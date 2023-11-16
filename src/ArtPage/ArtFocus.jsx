@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { ArtData } from "../Categories/Art";
 import Polaroid from "../Components/Polaroid";
 import { Button } from "@mui/material";
-import { StarBorderOutlined } from "@mui/icons-material";
+import { ListAltOutlined, StarBorderOutlined } from "@mui/icons-material";
 
 const ArtFocus = () => {
   const { id } = useParams();
@@ -32,6 +32,7 @@ const ArtFocus = () => {
           <div className="artFocus__text">
             <p>{project.description1}</p>
             <p>{project.description2}</p>
+            <Button endIcon={<ListAltOutlined/>}>Agregar a Mi Lista</Button>
           </div>
         </div>
       </div>

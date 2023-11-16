@@ -1,3 +1,7 @@
-#landing {
-  min-height: 200vh;
+.landing__img {
+  width: 100%;
+}
+
+.landing__img > img {
+  object-fit: contain;
 }

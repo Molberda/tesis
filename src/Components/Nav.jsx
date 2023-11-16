@@ -3,7 +3,7 @@ import "./Nav.css";
 import SearchBar from "./SearchBar";
 import NavTab from "./NavTab";
 import { NavLink, useNavigate } from "react-router-dom";
-import { EmojiNatureOutlined, ListAltOutlined, StarBorderOutlined } from "@mui/icons-material";
+import { EmojiNatureOutlined, ListAltOutlined, MailOutline, StarBorderOutlined } from "@mui/icons-material";
 import { Button } from "@mui/material";
 
 const Nav = () => {
@@ -21,6 +21,9 @@ const Nav = () => {
           </NavLink>
           <NavLink to='/destacados'>
             <Button endIcon={<StarBorderOutlined />}><h1 className="navLink">Destacados</h1></Button>
+          </NavLink>
+          <NavLink to='/destacados'>
+            <Button endIcon={<MailOutline />}><h1 className="navLink">Iniciar Sesión</h1></Button>
           </NavLink>
         </div>
       </nav>
