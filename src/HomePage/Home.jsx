@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from './HomeSections/Landing';
+import Landing from './Landing';
 
 const Home = () => {
     return (
