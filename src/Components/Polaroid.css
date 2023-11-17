@@ -10,6 +10,7 @@
 .framed__img{
     position: absolute;
     width: 85%;
+    min-height: 75%;
     top: 1.5em;
     left: 1.5em;
 }

@@ -14,7 +14,7 @@ export const ArtData = [
     addImg1: "",
     addImg2: "",
     addImg3: "",
-    subtitle: "Exposición colectiva, cementerio Alemán de Bogotá",
+    subtitle: "",
     description1:
       "Arrancar los ojos es un proyecto en torno a la mirada y su dimensión política,hace referencia al concepto de violencia institucional, depresión y trauma colectivo, centrándose en el patrón de ataque ocular por parte de las fuerzas del Estado. Propone una reflexión y pregunta por lo inmediatamente anterior a ese momento de mutilación y por lo que queda luego la tragedia. Se pregunta por las causas, por esa acción violenta de generar ausencia de mirada, invisibilidad y ceguera.",
     description2:
@@ -48,10 +48,23 @@ export const ArtData = [
     addImg1: "",
     addImg2: "",
     addImg3: "",
-    subtitle: "Exposición colectiva, cementerio Alemán de Bogotá",
+    subtitle: "En colaboración con Arturo Gutiérrez y Pelitoz locos",
     description1:
-      "El cementerio Alemán de Bogotá abre sus puertas al público y recibe la exposición Elegías al ruido y al tiempo con la curaduría de Paul Sebastian Mesa.",
-    description2:
-      "Esta muestra, resulta de un proceso investigativo y de reflexión, recurre al espacio del cementerio para evaluar cómo lo conclusivo otorga sentido en el ahora, donde se evitan los cierres y nos pensamos eternos.",
+      "Entrar en el espacio del arte, como en un templo, es creer que la disposición de los objetos y las imágenes cumplen una función mágica. Ánima Híbrida invita a participar en este espacio desde la experiencia material que nos atraviesa a todos y a todas. Sentir el agua y la tierra, contemplar las formas de la luz, mezclarse con la energía de la vida que trae el chacal desde el fondo de la laguna, que también es la muerte.",
+    description2: "",
+  },
+  {
+    id: 2,
+    name: "Viceversa en el MAMBO",
+    artist1: "Maria Morales",
+    artist1Img: arte3Aut,
+    mainImg: arte3Main,
+    addImg1: "",
+    addImg2: "",
+    addImg3: "",
+    subtitle: "En colaboración con Arturo Gutiérrez y Pelitoz locos",
+    description1:
+      "Entrar en el espacio del arte, como en un templo, es creer que la disposición de los objetos y las imágenes cumplen una función mágica. Ánima Híbrida invita a participar en este espacio desde la experiencia material que nos atraviesa a todos y a todas. Sentir el agua y la tierra, contemplar las formas de la luz, mezclarse con la energía de la vida que trae el chacal desde el fondo de la laguna, que también es la muerte.",
+    description2: "",
   },
 ];

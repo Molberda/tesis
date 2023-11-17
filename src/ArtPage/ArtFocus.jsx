@@ -48,6 +48,7 @@ const ArtFocus = () => {
             </div>
           </div>
           <div className="artFocus__text">
+            <h2>{project.subtitle}</h2>
             <p>{project.description1}</p>
             <p>{project.description2}</p>
             <Button endIcon={<ListAltOutlined />}>Agregar a Mi Lista</Button>

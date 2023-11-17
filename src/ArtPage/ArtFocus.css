@@ -88,6 +88,7 @@
 .artFocus__text{
     display: flex;
     flex-direction: column;
+    gap: .75em;
 }
 
 .artFocus__text > p {
