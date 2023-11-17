@@ -31,6 +31,9 @@ const HighlightMap = ({ item }) => {
           className="highlightMap__img"
         >
           <img src={item.img} alt="" />
+          <div className="highlightMap__hover">
+           <h1>{item.name}</h1>
+          </div>
         </m.figure>
       ) : (
         <m.figure
@@ -45,6 +48,9 @@ const HighlightMap = ({ item }) => {
           className="highlightMap__img"
         >
           <img src={item.img} alt="" />
+          <div className="highlightMap__hover">
+           <h1>{item.name}</h1>
+          </div>
         </m.figure>
       )}
     </>

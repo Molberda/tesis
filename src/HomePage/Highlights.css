@@ -1,13 +1,13 @@
-#highlights{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#highlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.highlights__title{
-    color: var(--brown);
-    font-size: 3em; 
-    margin: 2em 0;
+.highlights__title {
+  color: var(--brown);
+  font-size: 3em;
+  margin: 2em 0;
 }
 
 .highlights__organizer {
@@ -16,6 +16,31 @@
 }
 
 .highlightMap__img {
+  position: relative;
   width: 50%;
 }
 
+.highlightMap__img:hover .highlightMap__hover{
+    opacity: 1;
+}
+
+
+
+.highlightMap__hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #2424249a;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.highlightMap__hover > h1 {
+    font-size: 3em;
+    letter-spacing: .15em;
+  color: var(--white);
+}
