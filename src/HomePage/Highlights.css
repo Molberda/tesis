@@ -1,0 +1,16 @@
+.highlights__organizer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.highlightMap__img {
+  width: 50%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
