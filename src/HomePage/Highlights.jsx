@@ -4,7 +4,6 @@ import { HighlightData } from "../Categories/HighlightsData";
 import HighlightMap from "./HighlightMap";
 
 const Highlights = () => {
-
   return (
     <section id="highlights">
       <div className="highlights__organizer">

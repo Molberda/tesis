@@ -1,27 +1,37 @@
-import React from 'react';
+import React from "react";
+import { motion as m } from "framer-motion";
 
 const HighlightMap = ({ item }) => {
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            console.log(entry)
-            if(entry.isIntersecting){
-                entry.target.classList.add('show')
-            }
-            else {
-                entry.target.classList.remove('show')
-            }
-        })
-    })
-
-    const hiddenElements = document.querySelectorAll(".hidden");
-    hiddenElements.forEach((el) => observer.observe(el))
-
-    return (
-        <figure className="highlightMap__img hidden">
-            <img src={item.img} alt="" />
-        </figure>
-    );
-}
+  const isOdd = item.id % 2 !== 0;
+  return (
+    <>
+      {isOdd ? (
+        <m.figure
+          variants={{
+            hidden: { opacity: 0, y: -500 },
+            show: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+          className="highlightMap__img"
+        >
+          <img src={item.img} alt="" />
+        </m.figure>
+      ) : (
+        <m.figure
+          variants={{
+            hidden: { opacity: 0, y: 500 },
+            show: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+          className="highlightMap__img"
+        >
+          <img src={item.img} alt="" />
+        </m.figure>
+      )}
+    </>
+  );
+};
 
 export default HighlightMap;
