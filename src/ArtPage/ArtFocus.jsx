@@ -4,7 +4,11 @@ import { useParams } from "react-router-dom";
 import { ArtData } from "../Categories/Art";
 import Polaroid from "../Components/Polaroid";
 import { Button } from "@mui/material";
-import { ListAltOutlined, StarBorderOutlined } from "@mui/icons-material";
+import {
+  ImageOutlined,
+  ListAltOutlined,
+  StarBorderOutlined,
+} from "@mui/icons-material";
 
 const ArtFocus = () => {
   const { id } = useParams();
@@ -16,11 +20,17 @@ const ArtFocus = () => {
         <div className="artFocus__row row">
           <div className="artFocus__header">
             <h1>{project.name}</h1>
-            <Button endIcon={<StarBorderOutlined/>}>Puntuar</Button>
+            <div className="artFocus__btns">
+              <Button>Reseñas</Button>
+              <Button>Faq</Button>
+              <Button endIcon={<StarBorderOutlined />}>Puntuar</Button>
+              <Button endIcon={<StarBorderOutlined />}>Puntuacion</Button>
+            </div>
           </div>
           <div className="artFocus__gallery">
             <div className="artFocus__gallery--portraits">
               <Polaroid
+                className="artFocus__gallery--polaroid"
                 artist={project.artist1}
                 artistImg={project.artist1Img}
               />
@@ -28,11 +38,19 @@ const ArtFocus = () => {
             <figure className="artFocus__gallery--main">
               <img src={project.mainImg} alt="" />
             </figure>
+            <div className="artFocus__gallery--btns">
+              <Button endIcon={<ImageOutlined />}>
+                <h1>Imagenes</h1>
+              </Button>
+              <Button>
+                <h1>Adicional</h1>
+              </Button>
+            </div>
           </div>
           <div className="artFocus__text">
             <p>{project.description1}</p>
             <p>{project.description2}</p>
-            <Button endIcon={<ListAltOutlined/>}>Agregar a Mi Lista</Button>
+            <Button endIcon={<ListAltOutlined />}>Agregar a Mi Lista</Button>
           </div>
         </div>
       </div>

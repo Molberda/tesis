@@ -9,24 +9,80 @@
     justify-content: space-between;
 }
 
-.artFocus__header > button {
+.artFocus__btns{
+    display: flex;
+    align-items: center;
+}
+
+.artFocus__btns > button {
     font-family: "Michroma", sans-serif;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--blue);
 }
-.artFocus__header > button > span > svg{
+.artFocus__btns > button > span > svg{
     margin-top: .1em;
     font-size: 1.25em !important;
 }
 
 .artFocus__gallery{
+    position: relative;
     display: flex;
-    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    gap: 1em;
+    height: 30em;
+}
+/* .artFocus__gallery::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--brown);
+    border-radius: .5em;
+    opacity: .55;
+} */
+
+.artFocus__gallery--portraits{
+    flex: .25;
 }
 
 .artFocus__gallery--main{
+    flex: .7;
     border-radius: .5em;
+    height: 100%;
+}
+
+.artFocus__gallery--btns{
+    flex: .1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.artFocus__gallery--btns > button{
+    flex: 1 1;
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--brown);
+    font-size: .65em;
+    height: 50%;
+}
+
+.artFocus__gallery--btns > button:hover{
+    background-color: var(--brownHover);
+    color: white;
+}
+
+.artFocus__gallery--btns > button::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--brown);
+    opacity: .45;
+    border-radius: 4px;
 }
 
 .artFocus__text{

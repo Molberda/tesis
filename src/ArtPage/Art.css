@@ -6,11 +6,11 @@
   position: relative;
 }
 
-.artMap__img{
+.artMap__img {
   width: 100%;
 }
 
-.artMap__img > img{
+.artMap__img > img {
   object-fit: cover;
   aspect-ratio: 16 / 5;
 }
@@ -50,4 +50,11 @@
 
 .artMap__btn > span > .MuiSvgIcon-root {
   font-size: 1.2em;
+}
+
+.art__container > h1 {
+  color: var(--brown);
+  font-size: 3em;
+  margin: 2em 0;
+  text-align: center;
 }

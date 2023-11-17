@@ -10,6 +10,7 @@ const Art = () => {
         {ArtData.map((item) => (
           <ArtMap item={item} key={item.id} />
         ))}
+        <h1>Galerías</h1>
       </div>
     </section>
   );
