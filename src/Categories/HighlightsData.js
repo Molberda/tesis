@@ -10,42 +10,42 @@ import img8 from '../Assets/Highlights/highlight8.jpeg'
 export const HighlightData = [
     {
         id: 0,
-        name: 'test',
+        name: 'TIMØ',
         img: img1,
     },
     {
         id: 1,
-        name: 'test',
+        name: 'Classic Stone',
         img: img2,
     },
     {
         id: 2,
-        name: 'test',
+        name: 'Carlos Vives',
         img: img3,
     },
     {
         id: 3,
-        name: 'test',
+        name: 'Primavera Sound',
         img: img4,
     },
     {
         id: 4,
-        name: 'test',
+        name: 'Noche de Melodia y Bolero',
         img: img5,
     },
     {
         id: 5,
-        name: 'test',
+        name: 'Mujeres a la Plancha',
         img: img6,
     },
     {
         id: 6,
-        name: 'test',
+        name: 'Roger Waters',
         img: img7,
     },
     {
         id: 7,
-        name: 'test',
+        name: 'Lo Que Pasa en el Bar',
         img: img8,
     },
 ]
