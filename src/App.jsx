@@ -3,13 +3,15 @@ import "./App.css";
 import AnimatedRoutes from "./Components/AnimatedRoutes";
 import Nav from "./Components/Nav";
 import ScrollToTop from "./Components/ScrollToTop";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Nav />
       <AnimatedRoutes />
+      <Footer />
     </Router>
   );
 }
