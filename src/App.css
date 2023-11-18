@@ -55,3 +55,7 @@ button {
 h1 {
   font-family: "Michroma", sans-serif;
 }
+
+li{
+  list-style: none;
+}
