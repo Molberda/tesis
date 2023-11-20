@@ -6,6 +6,11 @@ import apa3img from "../Assets/Moda/Apparel/apa3/apa3img.webp";
 import apa3logo from "../Assets/Moda/Apparel/apa3/apa3logo.webp";
 import apa4img from "../Assets/Moda/Apparel/apa4/apa4img.webp";
 import apa4logo from "../Assets/Moda/Apparel/apa4/apa4logo.png";
+import hom1img from "../Assets/Moda/Apparel/hom1/hom1img.webp";
+import hom1logo from "../Assets/Moda/Apparel/hom1/hom1logo.webp";
+import hom2logo from "../Assets/Moda/Apparel/hom2/hom2logo.webp";
+import hom3img from "../Assets/Moda/Apparel/hom3/hom3img.webp";
+import hom3logo from "../Assets/Moda/Apparel/hom3/hom3logo.png";
 
 export const ModaData = [
   {
@@ -51,5 +56,38 @@ export const ModaData = [
     ig: "https://instagram.com/madretierra.co?igshid=OGQ5ZDc2ODk2ZA==",
     description:
       "Es una marca de ropa ecológica Colombiana; desde su inicio creen que la industria de la moda necesitaba una marca de ropa sostenible y con estilo. Una marca que  permita vestir para la vida diaria sin abandonar el sueño de ser más conscientes de la importancia de la sostenibilidad. Creen que trabajando en equipo se puede descontaminar el agua, reciclar, eliminar los desechos tóxicos, reducir las emisiones de carbono y utilizar menos petróleo. Además, creen que la industria textil puede ser constructiva y sueñan con un planeta en el que tejemos, diseñamos y vestimos lo que creemos.",
+  },
+  {
+    id: 4,
+    type: "HOMBRE",
+    name: "AGUEL",
+    img: hom1img,
+    logo: hom1logo,
+    link: "https://aguel.co",
+    ig: "https://instagram.com/aguel.co?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "AGUEL es un estudio de diseño contemporáneo fundado en 2019  con sede en Pereira, Colombia .La marca nació con una pequeña colección compuesta por prendas clásicas de lino dirigida exclusivamente al público masculino, un público en el que el diseñador quiere centrarse.Hoy en día diseñan prendas y accesorios para hombre y mujer inspirados en el folklore colombiano y elaborados a partir de una amplia gama de materiales naturales. Después de ingresar a algunas tiendas locales colombianas, Aguel comenzó a lanzar algunas piezas femeninas en su siguiente colección, ampliando el alcance de la marca y permitiendo al diseñador explorar diferentes formas, siluetas y técnicas.AGUEL propone colecciones redondeadas compuestas por prendas masculinas, femeninas y unisex confeccionadas a partir de finas fibras nobles e intervenidas por hábiles manos artesanas.",
+  },
+  {
+    id: 5,
+    type: "HOMBRE",
+    name: "General Studio",
+    img: '****** falta ******',
+    logo: hom2logo,
+    link: "https://www.gnrlstudios.com",
+    ig: "https://instagram.com/gnrl____?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "GENErAL es una marca de ropa y un estudio creativo fundada por Santiago & Martín, dos jóvenes apasionados por la moda y el arte. Un sótano en Francia en 2016 fue el lugar donde, empíricamente, intervinieron con pintura su propia ropa, resultando ser su Big Bang Creativo. Meses después, buscando redefinir la relación entre el Arte y la Moda, exploraron un concepto llamado WEARABLE ART (Arte para vestir), que consiste en pintar, a mano, obras de arte a gran escala sobre textiles y telas, para luego convertir ese gran lienzo en prendas únicas y exclusivas. ¡Cada pieza es una pequeña parte del rompecabezas! Con esto, GENErAL busca convertirse en una marca de ropa que inspire a las nuevas generaciones de creativos e inquietas mentes a través del Arte y la Moda. Dejar un legado es el objetivo.",
+  },
+  {
+    id: 6,
+    type: "HOMBRE",
+    name: "Whitman",
+    img: hom3img,
+    logo: hom3logo,
+    link: "https://whitmanstore.com/pages/revista?_ab=0&key=1694702081320",
+    ig: "https://instagram.com/whitman_co?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Versatilidad, funcionalidad, calidad y diseño es el propósito de la marca WHITMAN desde su comienzo en 2013. Sebastián y Felipe Falla querían definir el estilo de los colombianos,para eso empezaron a diseñar y llegaron a los abrigos que  fueron entonces las prendas que marcaron el inicio de la búsqueda por una identidad de marca. Aunque cuentan con aliados italianos, ingleses y peruanos que aportan los mejores textiles disponibles en el mercado mundial la producción de sus prendas es 100% colombiana, teniendo como propósito de evolucionar el mercado masculino Latinoamericano con su propuesta basada en prendas versátiles, cómodas y de calidad. Paños 100% lana, forros compuestos por fibras naturales y botones de semilla de tagua son un ejemplo de este compromiso asumido hace ya varios años.",
   },
 ];
