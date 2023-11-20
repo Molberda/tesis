@@ -18,7 +18,7 @@ const AnimatedRoutes = () => {
       <Route path="/arte/:id" element={<ArtFocus />} />
       <Route path="/moda" element={<Moda />} />
       <Route path="/moda/apparel" element={<ModaFocus products={apa} />} />
-      <Route path="/moda/hombre" element={<ModaFocus products={hom} />} />
+      <Route path="/moda/hombres" element={<ModaFocus products={hom} />} />
       <Route path="/moda/ropadeplaya" element={<ModaFocus products={rdp} />} />
     </Routes>
   );

@@ -28,6 +28,7 @@
 
 
 .highlightMap__hover {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

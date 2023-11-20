@@ -1,0 +1,37 @@
+.modaFocus__row{
+    flex-direction: column;
+}
+
+.modaFocus__organizer{
+    display: flex;
+    align-items: center;
+    min-height: max-content;
+}
+
+.modaFocus__img{
+    flex: .3;
+}
+
+.modaFocus__text{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: .55;
+    color: var(--brown);
+}
+
+.modaFocus__text > h1{
+    margin-bottom: auto;
+}
+
+.modaFocus__logo{
+    flex:.15;
+    flex-direction: column;
+    overflow: visible;
+}
+
+.modaFocus__links{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}

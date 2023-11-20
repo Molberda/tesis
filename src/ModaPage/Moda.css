@@ -1,0 +1,33 @@
+.moda__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moda__img {
+  position: relative;
+  height: fit-content;
+  width: calc(100% / 6);
+}
+
+.moda__img > img {
+  scale: 1.1;
+}
+
+.moda__hover {
+    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: #2424249a;
+  opacity: 0;
+  transition: all 300ms ease;
+  color: var(--white);
+}
+
+.moda__img:hover .moda__hover {
+  opacity: 1;
+}
