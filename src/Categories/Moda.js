@@ -17,6 +17,12 @@ import joy2img from "../Assets/Moda/Apparel/joy2/joy2img.jpeg";
 import joy2logo from "../Assets/Moda/Apparel/joy2/joy2logo.png";
 import joy3img from "../Assets/Moda/Apparel/joy3/joy3img.webp";
 import joy3logo from "../Assets/Moda/Apparel/joy3/joy3logo.webp";
+import rdp1img from "../Assets/Moda/Apparel/rdp1/rdp1img.jpeg";
+import rdp1logo from "../Assets/Moda/Apparel/rdp1/rdp1logo.png";
+import rdp2img from "../Assets/Moda/Apparel/rdp2/rdp2img.webp";
+import rdp2logo from "../Assets/Moda/Apparel/rdp2/rdp2logo.webp";
+import rdp3img from "../Assets/Moda/Apparel/rdp3/rdp3img.jpeg";
+import rdp3logo from "../Assets/Moda/Apparel/rdp3/rdp3logo.png";
 
 export const ModaData = [
   {
@@ -128,5 +134,38 @@ export const ModaData = [
     ig: "https://instagram.com/funsociety.inc?igshid=OGQ5ZDc2ODk2ZA==",
     description:
       "Fun society es una casa de diseño Colombiana  donde habitan los antojos, una tienda donde se resignifican los recuerdos y deseos en piezas de diseño y experiencias que complacen a tu niño interior. Crean un universo libre de las normas del mundo - sobre todo del mundo adulto. En esta nueva sociedad siempre se celebra  el lujo y la libertad, la society de la fiesta y la nostalgia.La producción es 100% Colombiana: los diseños se originan en  el estudio y son manufacturados por joyeros y artesanos locales, y confeccionados en talleres Colombianos, lo que permite tener control sobre la calidad de los productos.",
+  },
+  {
+    id: 10,
+    type: "ROPA DE PLAYA",
+    name: "Naranja Furcado",
+    img: rdp1img,
+    logo: rdp1logo,
+    link: "https://naranjafurcado.com",
+    ig: "https://instagram.com/naranjafurcado?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Naranja Furcado nace en 2018 del  deseo de lucir y personalizar cada una de las referencias sintiéndote cómodo, seguro y único.Es una marca con una etiqueta minimalista inspirada en las necesidades del director creativo en crear siluetas lisas para protagonizar los cuerpos de las mujeres. Cada pieza de cada colección está hecha en Colombia, asegurando delicadeza, pasión y comodidad.",
+  },
+  {
+    id: 11,
+    type: "ROPA DE PLAYA",
+    name: "Pandawa",
+    img: rdp2img,
+    logo: rdp2logo,
+    link: "https://www.pandawabeach.shop",
+    ig: "https://instagram.com/pandawa_beach?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Pandawa es una marca de vestidos talla única, hechos por madres cabeza de familia  para sacar adelante a sus familias. Ellas en cada costura de los vestidos dejan su amor y agradecimiento; por eso están llenos de luz y de belleza como las playas secretas de Pandawa en Bali.",
+  },
+  {
+    id: 12,
+    type: "ROPA DE PLAYA",
+    name: "Pandawa",
+    img: rdp3img,
+    logo: rdp3logo,
+    link: "https://redflag.com.co",
+    ig: "https://instagram.com/redflagswimwear?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Dos amigas de toda la vida, tras haber construido su carrera como ejecutivas de marketing en grandes multinacionales, decidieron aventurarse en el mar para emprender una travesía que se convirtió en una historia de emprendimiento y resiliencia; una empresa que cada vez es más grande, retadora y al mismo tiempo gratificante, gracias a dos mujeres que redefinieron la ropa de playa para hombres a través del buen gusto y del diseño inigualable de todas sus piezas para cada colección. El mundo del swimwear para hombres necesitaba un aire fresco, una postura más valiente y un poco más de riesgo, y es ahí donde nacen los principios para crear esta marca de talla mundial. Inspirada en el mar picado, el mar revuelto, el de las olas espectaculares y el que hay que enfrentar con respeto, ese que levanta una bandera roja. Es precisamente ahí, en la marea alta, en la borrasca, en la ola que golpea la orilla con carácter, es ahí donde está el espíritu de Redflag.",
   },
 ];
