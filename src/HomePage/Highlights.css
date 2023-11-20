@@ -5,6 +5,7 @@
 }
 
 .highlights__title {
+  text-align: center;
   color: var(--brown);
   font-size: 3em;
   margin: 2em 0;
@@ -17,7 +18,7 @@
 
 .highlightMap__img {
   position: relative;
-  width: 50%;
+  width: calc(100% / 5);
 }
 
 .highlightMap__img:hover .highlightMap__hover{
@@ -41,7 +42,7 @@
 
 .highlightMap__hover > h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 1.25em;
     letter-spacing: .15em;
   color: var(--white);
 }

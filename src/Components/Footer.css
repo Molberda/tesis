@@ -1,27 +1,52 @@
 footer {
   padding: 2em 0;
-  background-color: var(--brown);
+  background-color: var(--purple);
 }
+
 .footer__row {
   max-width: 1200px;
 }
 
-.footer__categories {
+.footer__row > div:nth-child(n) {
+  flex: 1;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: center;
   gap: 0.5em;
 }
 
-.footer__categories :is(a) {
-  color: var(--white);
+.footer__row > div:nth-child(1) {
+  border-right: 0.2em solid var(--orange);
+  align-items: flex-start;
+}
+
+.footer__row > div:nth-child(2) {
+  align-items: center;
+}
+
+.footer__row > div:nth-child(3) {
+  border-left: 0.2em solid var(--orange);
+  align-items: flex-end;
+}
+
+footer :is(h1) {
+  font-size: 1.5em;
+  color: var(--brown);
+}
+
+.footer__categories :is(a),
+.footer__artists :is(a),
+.footer__contact :is(a) {
+  color: var(--brown);
   font-size: 1.2em;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   text-decoration: none;
 }
 
-.footer__categories > li {
+.footer__categories > li,
+.footer__artists > li,
+.footer__contact > li {
   position: relative;
 }
 
@@ -30,12 +55,14 @@ footer {
   width: 0;
   height: 0.2em;
   right: 0;
-  background-color: var(--white);
+  background-color: var(--brown);
   border-radius: 5px;
   transition: all 500ms ease;
 }
 
-.footer__categories > li:hover .footer__hover--effect {
+.footer__categories > li:hover .footer__hover--effect,
+.footer__artists > li:hover .footer__hover--effect,
+.footer__contact > li:hover .footer__hover--effect {
   left: 0;
   width: 100%;
 }
