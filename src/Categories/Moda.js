@@ -11,6 +11,12 @@ import hom1logo from "../Assets/Moda/Apparel/hom1/hom1logo.webp";
 import hom2logo from "../Assets/Moda/Apparel/hom2/hom2logo.webp";
 import hom3img from "../Assets/Moda/Apparel/hom3/hom3img.webp";
 import hom3logo from "../Assets/Moda/Apparel/hom3/hom3logo.png";
+import joy1img from "../Assets/Moda/Apparel/joy1/joy1img.webp";
+import joy1logo from "../Assets/Moda/Apparel/joy1/joy1logo.webp";
+import joy2img from "../Assets/Moda/Apparel/joy2/joy2img.jpeg";
+import joy2logo from "../Assets/Moda/Apparel/joy2/joy2logo.png";
+import joy3img from "../Assets/Moda/Apparel/joy3/joy3img.webp";
+import joy3logo from "../Assets/Moda/Apparel/joy3/joy3logo.webp";
 
 export const ModaData = [
   {
@@ -72,7 +78,7 @@ export const ModaData = [
     id: 5,
     type: "HOMBRE",
     name: "General Studio",
-    img: '****** falta ******',
+    img: "****** falta ******",
     logo: hom2logo,
     link: "https://www.gnrlstudios.com",
     ig: "https://instagram.com/gnrl____?igshid=OGQ5ZDc2ODk2ZA==",
@@ -89,5 +95,38 @@ export const ModaData = [
     ig: "https://instagram.com/whitman_co?igshid=OGQ5ZDc2ODk2ZA==",
     description:
       "Versatilidad, funcionalidad, calidad y diseño es el propósito de la marca WHITMAN desde su comienzo en 2013. Sebastián y Felipe Falla querían definir el estilo de los colombianos,para eso empezaron a diseñar y llegaron a los abrigos que  fueron entonces las prendas que marcaron el inicio de la búsqueda por una identidad de marca. Aunque cuentan con aliados italianos, ingleses y peruanos que aportan los mejores textiles disponibles en el mercado mundial la producción de sus prendas es 100% colombiana, teniendo como propósito de evolucionar el mercado masculino Latinoamericano con su propuesta basada en prendas versátiles, cómodas y de calidad. Paños 100% lana, forros compuestos por fibras naturales y botones de semilla de tagua son un ejemplo de este compromiso asumido hace ya varios años.",
+  },
+  {
+    id: 7,
+    type: "JOYERIA",
+    name: "Fenomena",
+    img: joy1img,
+    logo: joy1logo,
+    link: "https://co.fenomena.com",
+    ig: "https://instagram.com/fenomena?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Fenomena fue creada en 2012 por la diseñadora Alejandra Llano. Hoy define su joyería como una mezcla de lo moderno y lo clásico (busca la atemporalidad), dónde la esmeralda es protagonista y juega un papel central en el diseño.Con la idea de devolverle a la esmeralda el rol relevante que ha jugado en la imagen de nuestro país, en el año 2015 la diseñadora decidió explorar y trabajar con esta piedra, principalmente en su estado en bruto (Morralla) y desde entonces la ha convertido en parte esencial del ADN de la marca. Todas las joyas son fabricadas a mano, se utiliza principalmente el bronce como metal y baños de oro de 24 kilates.",
+  },
+  {
+    id: 8,
+    type: "JOYERIA",
+    name: "Filamental",
+    img: joy2img,
+    logo: joy2logo,
+    link: "https://filamental.shop",
+    ig: "https://instagram.com/filamental_col?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Filamental nace de la pareja conformada por Victor y Daniela, con el fin de explorar su pasión por la sostenibilidad y la tecnología. La marca se enfoca en desarrollar diseños de accesorios y objetos 3D llenos de colores, usando exclusivamente bioplásticos, hechos de maíz y 100% biodegradables.",
+  },
+  {
+    id: 9,
+    type: "JOYERIA",
+    name: "Fun Society Inc",
+    img: joy3img,
+    logo: joy3logo,
+    link: "https://funsociety.com.co/pages/nosotros",
+    ig: "https://instagram.com/funsociety.inc?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Fun society es una casa de diseño Colombiana  donde habitan los antojos, una tienda donde se resignifican los recuerdos y deseos en piezas de diseño y experiencias que complacen a tu niño interior. Crean un universo libre de las normas del mundo - sobre todo del mundo adulto. En esta nueva sociedad siempre se celebra  el lujo y la libertad, la society de la fiesta y la nostalgia.La producción es 100% Colombiana: los diseños se originan en  el estudio y son manufacturados por joyeros y artesanos locales, y confeccionados en talleres Colombianos, lo que permite tener control sobre la calidad de los productos.",
   },
 ];
