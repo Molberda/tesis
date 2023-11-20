@@ -3,10 +3,6 @@ footer {
   background-color: var(--purple);
 }
 
-.footer__row {
-  max-width: 1200px;
-}
-
 .footer__row > div:nth-child(n) {
   flex: 1;
   padding: 0 1em;
