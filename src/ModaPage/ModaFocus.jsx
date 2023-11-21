@@ -19,13 +19,21 @@ const ModaFocus = ({ products }) => {
               <figure className="modaFocus__logo">
                 <img src={product.logo} alt="" />
                 <div className="modaFocus__links">
-                  <a href={product.link}>
-                    Sitio Web <LanguageOutlined />
-                  </a>
-                  <a href={product.ig}>
-                    Instagram
-                    <Instagram />
-                  </a>
+                  {product.link ? (
+                    <a href={product.link}>
+                      Sitio Web <LanguageOutlined />
+                    </a>
+                  ) : (
+                    <></>
+                  )}
+                  {product.ig ? (
+                    <a href={product.ig}>
+                      Instagram
+                      <Instagram />
+                    </a>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </figure>
             </div>

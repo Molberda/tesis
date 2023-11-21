@@ -29,6 +29,13 @@ import acc2img from "../Assets/Moda/Accesorios/acc2/acc2img.webp";
 import acc2logo from "../Assets/Moda/Accesorios/acc2/acc2logo.png";
 import acc3img from "../Assets/Moda/Accesorios/acc3/acc3img.webp";
 import acc3logo from "../Assets/Moda/Accesorios/acc3/acc3logo.webp";
+import dep1img from "../Assets/Moda/Deportivo/dep1/dep1img.jpeg";
+import dep1logo from "../Assets/Moda/Deportivo/dep1/dep1logo.webp";
+import dep2img from "../Assets/Moda/Deportivo/dep2/dep2img.webp";
+import dep2logo from "../Assets/Moda/Deportivo/dep2/dep2logo.webp";
+import dep3img from "../Assets/Moda/Deportivo/dep3/dep3img.jpeg";
+import dep4img from "../Assets/Moda/Deportivo/dep4/dep4img.png";
+import dep4logo from "../Assets/Moda/Deportivo/dep4/dep4logo.svg";
 
 export const ModaData = [
   {
@@ -206,5 +213,49 @@ export const ModaData = [
     ig: "https://instagram.com/yidioshakim?igshid=OGQ5ZDc2ODk2ZA==",
     description:
       "Marca colombiana que se caracteriza por unir elementos representativos de diferentes culturas para crear productos únicos. Sus carteras son un viaje cultural que convierte lo ordinario en extraordinario.Los bolsos están hechos a mano por artesanos de Oriente Medio que representan la descendencia árabe de las creadoras de la marca. Las correas, hechas por los indígenas Wayuu, representan a Colombia. El sello adicional de la marca es la intervención a  las correas  dándoles personalidad y mucho color a través de accesorios que representan simbología positiva.",
+  },
+  {
+    id: 16,
+    type: "DEPORTIVO",
+    name: "Beat A Bee",
+    img: dep1img,
+    logo: dep1logo,
+    link: "https://beatabee.com",
+    ig: "https://instagram.com/beat.a.bee?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "La marca  nace en 2017 de la mano de Maria Elena Pombo y Alexandra Abello, quienes buscan ofrecer prendas que fortalezcan el poder femenino mediante la libertad, el movimiento y la acción a través de su concepto Sweat In Style. Sus fundadoras se inspiran en la música y diseñan para mujeres que creen firmemente en la fuerza de su cuerpo, el impulso energético del fitness, el poder de realizar actividades que les motiven y en elevar sus latidos para tener mayor voluntad. Cada prenda que lanzan en las dos colecciones anuales de la marca se confeccionan con textiles sostenibles de buena calidad, tecnología para alcanzar el mayor rendimiento, y cuentan con certificación OEKO-TEX, protección UV y el uso de Econyl®.",
+  },
+  {
+    id: 17,
+    type: "DEPORTIVO",
+    name: "MOVU",
+    img: dep2img,
+    logo: dep2logo,
+    link: "https://www.movusportswear.com",
+    ig: "https://instagram.com/movu_sportswear?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Movu es una marca colombiana de sportswear que nace en 2021; desde entonces se han caracterizado por apostarle a diseños sobrios y poder adaptar tendencias deportivas a la cotidianidad para que así sus clientes puedan llevar sus prendas a todas partes. Además, cuentan con la mejor tecnología y trabajando bajo la conciencia de la moda circular. Sus diseños están inspirados en los paisajes colombianos, sin dejar de lado la estética y la comodidad. Cuentan con tecnología especializada  detrás de cada prenda, cada uno de los textiles utilizados tiene características como filtros UV, antibacteriales y secado rápido.",
+  },
+  {
+    id: 18,
+    type: "DEPORTIVO",
+    name: "Reborn",
+    img: dep3img,
+    logo: null,
+    link: null,
+    ig: "https://instagram.com/reborn_thebrand?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Esta es una marca consciente de esencia Athleisure; nace durante el año 2020 con la distancia y la virtualidad de por medio, uniéndose como dupla creativa Verona Ramirez y Amanda Dudamel para construir una firma donde la ética, la estética y la versatilidad conviven en un mismo lugar, trabajando a partir de un modelo de negocio sostenible como meta. Ofrecen al consumidor prendas de alta calidad bajo la modalidad del slow fashion, diseñadas para mujeres y hombres activos con gustos sofisticados.",
+  },
+  {
+    id: 19,
+    type: "DEPORTIVO",
+    name: "VIKA",
+    img: dep4img,
+    logo: dep4logo,
+    link: "https://vika.com.co",
+    ig: "https://instagram.com/vika.active?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Vika lanzó su primera colección en Bogotá, en el año 2020. La marca está pensada para elevar el closet deportivo  que se potencian y transforman con el ejercicio y el movimiento. Cuentan con una estética divertida y femenina que incluye prendas pensadas para la comodidad y la versatilidad, cuyo propósito es acompañar a las mujeres en sus rutinas diarias y en la práctica de actividades físicas. Su producción tiene una periodicidad entre cuatro y seis meses y es hecha localmente con diseños propios para los estampados, telas antifluidos, lycras y acabados chintzados.",
   },
 ];

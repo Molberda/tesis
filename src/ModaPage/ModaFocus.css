@@ -11,6 +11,10 @@
     border-bottom: .2em solid var(--blue);
 }
 
+.modaFocus__organizer:last-child{
+    border-bottom: none;
+}
+
 .modaFocus__img{
     flex: .3;
 }
@@ -18,7 +22,7 @@
 .modaFocus__text{
     display: flex;
     flex-direction: column;
-    flex: .45;
+    flex: .55;
     color: var(--brown);
     min-height: 100%;
 }
@@ -36,7 +40,7 @@
 }
 
 .modaFocus__logo{
-    flex:.25;
+    flex:.15;
     flex-direction: column;
     overflow: visible;
 }
