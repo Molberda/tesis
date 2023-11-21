@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "../HomePage/Home";
 import Art from "../ArtPage/Art";
 import ArtFocus from "../ArtPage/ArtFocus";
@@ -7,10 +7,11 @@ import Moda from "../ModaPage/Moda";
 import ModaFocus from "../ModaPage/ModaFocus";
 import { ModaData } from "../Categories/Moda";
 import { AnimatePresence } from "framer-motion";
-import Nav from "./Nav";
-import Footer from "./Footer";
 
 const AnimatedRoutes = () => {
+
+  const location = useLocation()
+
   const acc = ModaData.filter((e) => e.type === "ACCESORIOS");
   const apa = ModaData.filter((e) => e.type === "APPAREL");
   const hom = ModaData.filter((e) => e.type === "HOMBRE");
@@ -19,8 +20,7 @@ const AnimatedRoutes = () => {
   const rdp = ModaData.filter((e) => e.type === "ROPA DE PLAYA");
   return (
     <AnimatePresence>
-      <Nav/>
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="/arte" element={<Art />} />
         <Route path="/arte/:id" element={<ArtFocus />} />
@@ -35,7 +35,6 @@ const AnimatedRoutes = () => {
           element={<ModaFocus products={rdp} />}
         />
       </Routes>
-      <Footer/>
     </AnimatePresence>
   );
 };

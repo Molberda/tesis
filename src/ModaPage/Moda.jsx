@@ -17,8 +17,8 @@ const Moda = () => {
   return (
     <m.section
       initial={{ x: "100%" }}
-      animate={{ x: 0, transition: { duration: 1 } }}
-      exit={{ x: "-100%", transition: { duration: 0.5, ease: "easeIn" } }}
+      animate={{ x: 0, transition: { duration: 1, delay: .5 } }}
+      exit={{ x: "-100%", transition: { duration: 0.5 } }}
       id="moda"
       className="top__section"
     >

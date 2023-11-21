@@ -9,9 +9,9 @@ import { motion as m } from "framer-motion";
 const Art = () => {
   return (
     <m.section
-      initial={{ y: "100%" }}
-      animate={{ y: 0, transition: { duration: 0.5 } }}
-      exit={{ y: "100%", transition: { duration: 0.5 } }}
+      initial={{ x: "100%" }}
+      animate={{ x: 0, transition: { duration: 1, delay: .5 } }}
+      exit={{ x: "100%", transition: { duration: .5 } }}
       id="art"
       className="top__section"
     >
@@ -19,9 +19,9 @@ const Art = () => {
         {ArtData.map((item) => (
           <ArtMap item={item} key={item.id} />
         ))}
+      </div>
         <h1 className="divider__title">Galerías</h1>
         <Slideshow imgs={gals} css={"gallery"} />
-      </div>
     </m.section>
   );
 };

@@ -8,7 +8,7 @@ const ModaFocus = ({ products }) => {
       <div className="modaFocus__container container top__container">
         <div className="modaFocus__row row">
           {products.map((product) => (
-            <div className="modaFocus__organizer">
+            <div key={product.id} className="modaFocus__organizer">
               <figure className="modaFocus__img">
                 <img src={product.img} alt="" />
               </figure>

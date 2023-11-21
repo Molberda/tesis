@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer
-    >
+    <footer>
       <div className="footer__row row">
         <div className="footer__categories">
           <h1>Categorias</h1>
