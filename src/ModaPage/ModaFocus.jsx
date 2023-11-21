@@ -1,6 +1,6 @@
 import React from "react";
 import "./ModaFocus.css";
-import { Instagram, LanguageOutlined  } from "@mui/icons-material";
+import { Instagram, LanguageOutlined } from "@mui/icons-material";
 
 const ModaFocus = ({ products }) => {
   return (
@@ -19,8 +19,13 @@ const ModaFocus = ({ products }) => {
               <figure className="modaFocus__logo">
                 <img src={product.logo} alt="" />
                 <div className="modaFocus__links">
-                    <a href={product.link}>Sitio Web <LanguageOutlined/> </a>
-                    <a href={product.ig}>Instagram<Instagram/></a>
+                  <a href={product.link}>
+                    Sitio Web <LanguageOutlined />
+                  </a>
+                  <a href={product.ig}>
+                    Instagram
+                    <Instagram />
+                  </a>
                 </div>
               </figure>
             </div>
