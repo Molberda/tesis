@@ -8,7 +8,6 @@ const Slideshow = ({ imgs, css }) => {
   const slideshow = useRef();
 
   useEffect(() => {
-    console.log(slideshow.current.scrollWidth, slideshow.current.offsetWidth);
     setWidth(slideshow.current.scrollWidth - slideshow.current.offsetWidth);
   }, []);
 

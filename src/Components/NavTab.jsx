@@ -1,14 +1,14 @@
 import React from "react";
 import NavBtn from "./NavBtn";
 import { useNavigate } from "react-router-dom";
-import logo from "../Assets/Logo-Naranja.PNG";
+import icon from "../Assets/navIcon.PNG";
 
 const NavTab = () => {
   const navTo = useNavigate();
   return (
     <div className="nav__tab">
       <figure className="nav__logo" onClick={() => navTo("/")}>
-        <img src={logo} alt="" />
+        <img src={icon} alt="" />
       </figure>
       <ul className="links__list">
         <NavBtn name="arte" link="/arte" />

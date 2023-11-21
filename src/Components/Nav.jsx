@@ -5,7 +5,7 @@ import NavTab from "./NavTab";
 import { Link, useNavigate } from "react-router-dom";
 import { ListAltOutlined, PersonOutline, StarBorderOutlined } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import icon from '../Assets/navIcon.PNG'
+import logo from '../Assets/Logo-Naranja.PNG'
 
 const Nav = () => {
   const navTo = useNavigate();
@@ -14,7 +14,7 @@ const Nav = () => {
     <div className="nav__background">
       <nav>
         <figure className="nav__icon" onClick={() => navTo("/")}>
-          <img src={icon} alt="" />
+          <img src={logo} alt="" />
         </figure>
         <SearchBar />
         <div className="nav__shortcuts">

@@ -32,9 +32,8 @@ nav {
   cursor: pointer;
 }
 
-.nav__icon > .MuiSvgIcon-root {
-  color: var(--orange);
-  font-size: 3em;
+.nav__icon > img {
+  width: 8em;
 }
 
 .nav__searchBar {
@@ -93,7 +92,7 @@ nav {
   background-color: var(--purple);
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  gap: 2em;
+  gap: 1em;
 }
 
 .nav__logo {
