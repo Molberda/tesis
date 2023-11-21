@@ -6,7 +6,7 @@
 .moda__img {
   position: relative;
   height: fit-content;
-  width: calc(100% / 6);
+  width: calc(100% / 3);
 }
 
 .moda__img > img {
@@ -30,4 +30,8 @@
 
 .moda__img:hover .moda__hover {
   opacity: 1;
+}
+
+.moda__hover > h1{
+  font-size: 2em;
 }
