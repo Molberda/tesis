@@ -1,10 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { motion as m } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer>
+    <m.footer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 5, ease: "easeInOut" } }}
+      exit={{ opacity: 0, transitionDuration: 5 }}
+    >
       <div className="footer__row row">
         <div className="footer__categories">
           <h1>Categorias</h1>
@@ -76,7 +81,7 @@ const Footer = () => {
           </li>
         </div>
       </div>
-    </footer>
+    </m.footer>
   );
 };
 

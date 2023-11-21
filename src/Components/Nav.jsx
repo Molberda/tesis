@@ -3,8 +3,9 @@ import "./Nav.css";
 import SearchBar from "./SearchBar";
 import NavTab from "./NavTab";
 import { Link, useNavigate } from "react-router-dom";
-import { EmojiNatureOutlined, ListAltOutlined, PersonOutline, StarBorderOutlined } from "@mui/icons-material";
+import { ListAltOutlined, PersonOutline, StarBorderOutlined } from "@mui/icons-material";
 import { Button } from "@mui/material";
+import icon from '../Assets/navIcon.PNG'
 
 const Nav = () => {
   const navTo = useNavigate();
@@ -13,7 +14,7 @@ const Nav = () => {
     <div className="nav__background">
       <nav>
         <figure className="nav__icon" onClick={() => navTo("/")}>
-          <EmojiNatureOutlined />
+          <img src={icon} alt="" />
         </figure>
         <SearchBar />
         <div className="nav__shortcuts">

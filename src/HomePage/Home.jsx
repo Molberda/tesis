@@ -6,7 +6,12 @@ import { motion as m } from "framer-motion";
 
 const Home = () => {
   return (
-    <m.section id="home">
+    <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 2.5, ease: "easeInOut" } }}
+      exit={{ opacity: 0, transitionDuration: 1 }}
+      id="home"
+    >
       <Landing />
       <Highlights />
     </m.section>
