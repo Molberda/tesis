@@ -7,6 +7,8 @@ import Moda from "../ModaPage/Moda";
 import ModaFocus from "../ModaPage/ModaFocus";
 import { ModaData } from "../Categories/Moda";
 import { AnimatePresence } from "framer-motion";
+import Nav from "./Nav";
+import Footer from "./Footer";
 
 const AnimatedRoutes = () => {
   const acc = ModaData.filter((e) => e.type === "ACCESORIOS");
@@ -17,6 +19,7 @@ const AnimatedRoutes = () => {
   const rdp = ModaData.filter((e) => e.type === "ROPA DE PLAYA");
   return (
     <AnimatePresence>
+      <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/arte" element={<Art />} />
@@ -32,6 +35,7 @@ const AnimatedRoutes = () => {
           element={<ModaFocus products={rdp} />}
         />
       </Routes>
+      <Footer/>
     </AnimatePresence>
   );
 };

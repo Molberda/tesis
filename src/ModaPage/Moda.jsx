@@ -9,13 +9,19 @@ import rdp from "../Assets/Moda/Genericas/Rdp.jpeg";
 import { useNavigate } from "react-router-dom";
 import { MultiData } from "../Categories/Multi";
 import Slideshow from "../Components/Slideshow";
+import { motion as m } from "framer-motion";
 
 const Moda = () => {
-
   const navTo = useNavigate();
 
   return (
-    <section id="moda" className="top__section">
+    <m.section
+      initial={{ x: "100%" }}
+      animate={{ x: 0, transition: { duration: 1 } }}
+      exit={{ x: "-100%", transition: { duration: 0.5, ease: "easeIn" } }}
+      id="moda"
+      className="top__section"
+    >
       <div className="moda__container container">
         <figure className="moda__img" onClick={() => navTo("/moda/accesorios")}>
           <img src={acc} alt="" />
@@ -58,8 +64,8 @@ const Moda = () => {
         </figure>
       </div>
       <h1 className="divider__title">MULTIMARCAS</h1>
-      <Slideshow imgs={MultiData} css={'multi'}/>
-    </section>
+      <Slideshow imgs={MultiData} css={"multi"} />
+    </m.section>
   );
 };
 

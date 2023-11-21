@@ -9,7 +9,7 @@ const Home = () => {
     <m.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 2.5, ease: "easeInOut" } }}
-      exit={{ opacity: 0, transitionDuration: 1 }}
+      exit={{ opacity: 0, transitionDuration: 5 }}
       id="home"
     >
       <Landing />
