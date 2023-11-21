@@ -23,6 +23,12 @@ import rdp2img from "../Assets/Moda/Playa/rdp2/rdp2img.webp";
 import rdp2logo from "../Assets/Moda/Playa/rdp2/rdp2logo.webp";
 import rdp3img from "../Assets/Moda/Playa/rdp3/rdp3img.jpeg";
 import rdp3logo from "../Assets/Moda/Playa/rdp3/rdp3logo.png";
+import acc1img from "../Assets/Moda/Accesorios/acc1/acc1img.webp";
+import acc1logo from "../Assets/Moda/Accesorios/acc1/acc1logo.webp";
+import acc2img from "../Assets/Moda/Accesorios/acc2/acc2img.webp";
+import acc2logo from "../Assets/Moda/Accesorios/acc2/acc2logo.png";
+import acc3img from "../Assets/Moda/Accesorios/acc3/acc3img.webp";
+import acc3logo from "../Assets/Moda/Accesorios/acc3/acc3logo.webp";
 
 export const ModaData = [
   {
@@ -167,5 +173,38 @@ export const ModaData = [
     ig: "https://instagram.com/redflagswimwear?igshid=OGQ5ZDc2ODk2ZA==",
     description:
       "Dos amigas de toda la vida, tras haber construido su carrera como ejecutivas de marketing en grandes multinacionales, decidieron aventurarse en el mar para emprender una travesía que se convirtió en una historia de emprendimiento y resiliencia; una empresa que cada vez es más grande, retadora y al mismo tiempo gratificante, gracias a dos mujeres que redefinieron la ropa de playa para hombres a través del buen gusto y del diseño inigualable de todas sus piezas para cada colección. El mundo del swimwear para hombres necesitaba un aire fresco, una postura más valiente y un poco más de riesgo, y es ahí donde nacen los principios para crear esta marca de talla mundial. Inspirada en el mar picado, el mar revuelto, el de las olas espectaculares y el que hay que enfrentar con respeto, ese que levanta una bandera roja. Es precisamente ahí, en la marea alta, en la borrasca, en la ola que golpea la orilla con carácter, es ahí donde está el espíritu de Redflag.",
+  },
+  {
+    id: 13,
+    type: "ACCESORIOS",
+    name: "AMANI",
+    img: acc1img,
+    logo: acc1logo,
+    link: "https://www.amanieyewear.com",
+    ig: "https://instagram.com/amani.eyewear?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Amani significa paz y armonía en la lengua africana Swahili y el color azul  que nos representa simboliza tranquilidad y serenidad. La marca se dedica a la fabricación de gafas para todas las ocasiones, que sean versátiles y a la moda perfectas para ir a la playa o de vacaciones. En sus productos usan diferentes tipos de acetato, acetato italiano y policarbonato y todas las gafas tienen filtro de protección UV400 .Además, buscan reducir el impacto en el medio ambiente y fabrican las cajas en cartón ecológico y los estuches con telas y materiales reutilizados.",
+  },
+  {
+    id: 14,
+    type: "ACCESORIOS",
+    name: "Martin Pescador",
+    img: acc2img,
+    logo: acc2logo,
+    link: "https://martinpescador.co",
+    ig: "https://instagram.com/martinpescador_?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Marca dedicada a la ropa de hombre, son reconocidos principalmente por sus sombreros, los cuales son hechos y tejidos 100% a mano por maestros artesanos. Gracias a que su principal material es  (paja toquilla) la cual no se calienta y le da al cliente comodidad para poder usarlos en cualquier ocasión. Cuentan con taller en Bogotá, donde fabrican estas obras de arte, allí diseñamos cada una de estas piezas únicas y las personalizan con accesorios llenos de historias ancestrales de distintas etnias de Colombia.Por eso, cuando venden un sombrero, no vendemos un producto normal; entregan una obra irrepetible, porque no hay dos iguales. Además, los clientes pueden disfrutar de un servicio de mantenimiento ilimitado, así como cambios de cinta para que puedan llevar su Martín Pescador a visitar los escenarios más lindos del mundo.",
+  },
+  {
+    id: 15,
+    type: "ACCESORIOS",
+    name: "Yidios Hakim",
+    img: acc3img,
+    logo: acc3logo,
+    link: "https://yidioshakim.com",
+    ig: "https://instagram.com/yidioshakim?igshid=OGQ5ZDc2ODk2ZA==",
+    description:
+      "Marca colombiana que se caracteriza por unir elementos representativos de diferentes culturas para crear productos únicos. Sus carteras son un viaje cultural que convierte lo ordinario en extraordinario.Los bolsos están hechos a mano por artesanos de Oriente Medio que representan la descendencia árabe de las creadoras de la marca. Las correas, hechas por los indígenas Wayuu, representan a Colombia. El sello adicional de la marca es la intervención a  las correas  dándoles personalidad y mucho color a través de accesorios que representan simbología positiva.",
   },
 ];
