@@ -1,7 +1,8 @@
-.landing__img {
-  width: 100%;
+#landing {
+  justify-content: center;
 }
 
-.landing__img > img {
-  object-fit: contain;
+.landing__img {
+  /* width: 100%; */
+  max-height: 100vh;
 }

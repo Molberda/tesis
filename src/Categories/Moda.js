@@ -173,7 +173,7 @@ export const ModaData = [
   {
     id: 12,
     type: "ROPA DE PLAYA",
-    name: "Pandawa",
+    name: "Red Flag",
     img: rdp3img,
     logo: rdp3logo,
     link: "https://redflag.com.co",

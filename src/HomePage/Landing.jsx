@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.css'
-import landing from '../Assets/landing.png'
+import landing from '../Assets/landing.PNG'
 
 const Landing = () => {
     return (
