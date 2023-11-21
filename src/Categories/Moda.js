@@ -8,6 +8,7 @@ import apa4img from "../Assets/Moda/Apparel/apa4/apa4img.webp";
 import apa4logo from "../Assets/Moda/Apparel/apa4/apa4logo.png";
 import hom1img from "../Assets/Moda/Hombre/hom1/hom1img.webp";
 import hom1logo from "../Assets/Moda/Hombre/hom1/hom1logo.webp";
+import hom2img from "../Assets/Moda/Hombre/hom2/hom2img.jpeg";
 import hom2logo from "../Assets/Moda/Hombre/hom2/hom2logo.webp";
 import hom3img from "../Assets/Moda/Hombre/hom3/hom3img.webp";
 import hom3logo from "../Assets/Moda/Hombre/hom3/hom3logo.png";
@@ -97,7 +98,7 @@ export const ModaData = [
     id: 5,
     type: "HOMBRE",
     name: "General Studio",
-    img: "****** falta ******",
+    img: hom2img,
     logo: hom2logo,
     link: "https://www.gnrlstudios.com",
     ig: "https://instagram.com/gnrl____?igshid=OGQ5ZDc2ODk2ZA==",
