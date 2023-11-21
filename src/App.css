@@ -32,7 +32,7 @@ section {
   display: flex;
 }
 
-.top__container{
+.top__container {
   padding-top: 6em;
 }
 
@@ -56,6 +56,13 @@ h1 {
   font-family: "Michroma", sans-serif;
 }
 
-li{
+li {
   list-style: none;
+}
+
+.divider__title {
+  color: var(--brown);
+  font-size: 3em;
+  margin: 2em 0;
+  text-align: center;
 }

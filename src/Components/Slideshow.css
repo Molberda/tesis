@@ -1,0 +1,25 @@
+.slideshow{
+    cursor: grab;
+    overflow: hidden;
+}
+
+.inner-slideshow{
+    display: flex;
+}
+
+.slideshow__img{
+    padding: 1em;
+}
+
+.gallerySlideshow__img{
+    min-width: 60em;
+}
+
+.multiSlideshow__img{
+    min-width: 30em;
+}
+
+.slideshow__img > img{
+    pointer-events: none;
+    border-radius: 1em;
+}

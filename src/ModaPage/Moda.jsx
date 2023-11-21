@@ -7,9 +7,13 @@ import joy from "../Assets/Moda/Genericas/Joy.jpeg";
 import dep from "../Assets/Moda/Genericas/Dep.jpeg";
 import rdp from "../Assets/Moda/Genericas/Rdp.jpeg";
 import { useNavigate } from "react-router-dom";
+import { MultiData } from "../Categories/Multi";
+import Slideshow from "../Components/Slideshow";
 
 const Moda = () => {
+
   const navTo = useNavigate();
+
   return (
     <section id="moda" className="top__section">
       <div className="moda__container container">
@@ -53,6 +57,8 @@ const Moda = () => {
           </div>
         </figure>
       </div>
+      <h1 className="divider__title">MULTIMARCAS</h1>
+      <Slideshow imgs={MultiData} css={'multi'}/>
     </section>
   );
 };

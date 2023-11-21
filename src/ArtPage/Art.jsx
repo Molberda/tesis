@@ -2,6 +2,8 @@ import React from "react";
 import "./Art.css";
 import ArtMap from "./ArtMap";
 import { ArtData } from "../Categories/Art";
+import Slideshow from "../Components/Slideshow";
+import gals from "../Categories/gal";
 
 const Art = () => {
   return (
@@ -10,7 +12,8 @@ const Art = () => {
         {ArtData.map((item) => (
           <ArtMap item={item} key={item.id} />
         ))}
-        <h1>Galerías</h1>
+        <h1 className="divider__title">Galerías</h1>
+        <Slideshow imgs={gals} css={'gallery'} />
       </div>
     </section>
   );
