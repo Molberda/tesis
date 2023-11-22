@@ -1,6 +1,6 @@
 footer {
   margin-top: 2em;
-  padding: 2em 0;
+  padding: 1em 0;
   background-color: var(--purple);
 }
 
@@ -9,7 +9,7 @@ footer {
   padding: 0 1em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.25em;
 }
 
@@ -29,6 +29,7 @@ footer {
 
 footer :is(h1) {
   font-size: 1.5em;
+  margin-bottom: 1em;
   color: var(--brown);
 }
 
@@ -65,31 +66,43 @@ footer :is(h1) {
   width: 100%;
 }
 
-.footer__sub > button{
+.footer__sub > button {
   position: relative;
-  color:var(--orange);
+  color: var(--orange);
+  margin-bottom: 1em;
 }
 
 .footer__sub > button::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 4px;
   background-color: var(--orange);
-  opacity: .1;
+  opacity: 0.1;
 }
 
 .footer__sub > button > span > svg {
   font-size: 1.8em !important;
 }
 
-.footer__sub > button > h1{
-  color:var(--orange);
+.footer__sub > button > h1 {
+  color: var(--orange);
+  margin-bottom: 0;
 }
-.footer__sub > p{
+
+.footer__sub > p {
   color: var(--brown);
   text-align: center;
   font-size: 1.2em;
   font-weight: 600;
+}
+.footer__contact > li {
+  margin-bottom: .25em;
+}
+
+.footer__contact > li > a {
+  display: flex;
+  align-items: center;
+  gap: .25em;
 }
