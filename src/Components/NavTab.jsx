@@ -13,7 +13,7 @@ const NavTab = () => {
       <ul className="links__list">
         <NavBtn name="arte" link="/arte" />
         <NavBtn name="moda" link="/moda" />
-        <NavBtn name="diseno" link="/" deve={true}/>
+        <NavBtn name="diseño" link="/" deve={true}/>
         <NavBtn name="teatro" link="/" deve={true}/>
         <NavBtn name="musica" link="/" deve={true}/>
         {/* <NavBtn name="diseno" link="/diseno" />

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
+import { TurnedInNotOutlined } from "@mui/icons-material";
 
 const Footer = () => {
   return (
@@ -13,7 +15,7 @@ const Footer = () => {
             <div className="footer__hover--effect"></div>
           </li>
           <li>
-            <Link to={"/diseno"}>Diseno</Link>
+            <Link to={"/diseno"}>Diseño</Link>
             <div className="footer__hover--effect"></div>
           </li>
           <li>
@@ -29,52 +31,19 @@ const Footer = () => {
             <div className="footer__hover--effect"></div>
           </li>
         </div>
-        <div className="footer__artists">
+        <div className="footer__sub">
+          <Button endIcon={<TurnedInNotOutlined />}>
+            <h1>¡Suscribete!</h1>
+          </Button>
+          <p>
+            Suscribiéndote a Coolturahunt recibirás contenido exclusivo,
+            noticias, invitaciones a eventos y posibles descuentos en marcas
+            aliadas. <br /> ¡Haz parte de esta comunidad!
+          </p>
+        </div>
+        {/* <div className="footer__contact">
           <h1>Categorias</h1>
-          <li>
-            <Link to={"/arte"}>Arte</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/diseno"}>Diseno</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/moda"}>Moda</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/teatro"}>Teatro</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/musica"}>Musica</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-        </div>
-        <div className="footer__contact">
-          <h1>Categorias</h1>
-          <li>
-            <Link to={"/arte"}>Arte</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/diseno"}>Diseno</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/moda"}>Moda</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/teatro"}>Teatro</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-          <li>
-            <Link to={"/musica"}>Musica</Link>
-            <div className="footer__hover--effect"></div>
-          </li>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
