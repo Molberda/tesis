@@ -5,7 +5,13 @@ import icon from "../Assets/navIcon.PNG";
 
 const About = () => {
   return (
-    <m.section id="about" className="top__section">
+    <m.section
+      initial={{ x: "-100%" }}
+      animate={{ x: 0, transition: { duration: 1, delay: 0.3 } }}
+      exit={{ x: "-100%", transition: { duration: 0.25 } }}
+      id="about"
+      className="top__section"
+    >
       <div className="about__container container top__container">
         <div className="about__row row">
           <figure className="about__img">

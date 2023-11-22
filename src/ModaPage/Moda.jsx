@@ -17,8 +17,8 @@ const Moda = () => {
   return (
     <m.section
       initial={{ x: "100%" }}
-      animate={{ x: 0, transition: { duration: 1, delay: .5 } }}
-      exit={{ x: "-100%", transition: { duration: 0.5 } }}
+      animate={{ x: 0, transition: { duration: 1, delay: 0.3 } }}
+      exit={{ x: "-100%", transition: { duration: 0.25 } }}
       id="moda"
       className="top__section"
     >
@@ -29,22 +29,16 @@ const Moda = () => {
             <h1>Accesorios</h1>
           </div>
         </figure>
-        <figure className="moda__img" onClick={() => navTo("/moda/apparel")}>
-          <img src={apa} alt="" />
+        <figure className="moda__img" onClick={() => navTo("/moda/joyeria")}>
+          <img src={joy} alt="" />
           <div className="moda__hover">
-            <h1>Apparel</h1>
+            <h1>Joyeria</h1>
           </div>
         </figure>
         <figure className="moda__img" onClick={() => navTo("/moda/hombres")}>
           <img src={hom} alt="" />
           <div className="moda__hover">
             <h1>Hombres</h1>
-          </div>
-        </figure>
-        <figure className="moda__img" onClick={() => navTo("/moda/joyeria")}>
-          <img src={joy} alt="" />
-          <div className="moda__hover">
-            <h1>Joyeria</h1>
           </div>
         </figure>
         <figure className="moda__img" onClick={() => navTo("/moda/deportivo")}>
@@ -60,6 +54,12 @@ const Moda = () => {
           <img src={rdp} alt="" />
           <div className="moda__hover">
             <h1>Ropa de Playa</h1>
+          </div>
+        </figure>
+        <figure className="moda__img" onClick={() => navTo("/moda/apparel")}>
+          <img src={apa} alt="" />
+          <div className="moda__hover">
+            <h1>Apparel</h1>
           </div>
         </figure>
       </div>

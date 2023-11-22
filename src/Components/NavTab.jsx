@@ -7,7 +7,7 @@ const NavTab = () => {
   const navTo = useNavigate();
   return (
     <div className="nav__tab">
-      <figure className="nav__logo" onClick={() => navTo("/")}>
+      <figure className="nav__logo" onClick={() => navTo("/nosotros")}>
         <img src={icon} alt="" />
       </figure>
       <ul className="links__list">

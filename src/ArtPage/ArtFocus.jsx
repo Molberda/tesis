@@ -18,8 +18,8 @@ const ArtFocus = () => {
   return (
     <m.section
       initial={{ scale: 0 }}
-      animate={{ scale: 1, transition: { duration: 1, delay: 0.5 } }}
-      exit={{ scale: 0, transition: { duration: 0.5 } }}
+      animate={{ scale: 1, transition: { duration: 1, delay: 0.3 } }}
+      exit={{ scale: 0, transition: { duration: 0.25 } }}
       id="artFocus"
       className="top__section"
     >

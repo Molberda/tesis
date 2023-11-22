@@ -10,8 +10,8 @@ const Art = () => {
   return (
     <m.section
       initial={{ x: "100%" }}
-      animate={{ x: 0, transition: { duration: 1, delay: .5 } }}
-      exit={{ x: "100%", transition: { duration: .5 } }}
+      animate={{ x: 0, transition: { duration: 1, delay: 0.3 } }}
+      exit={{ x: "100%", transition: { duration: 0.25 } }}
       id="art"
       className="top__section"
     >
@@ -20,8 +20,8 @@ const Art = () => {
           <ArtMap item={item} key={item.id} />
         ))}
       </div>
-        <h1 className="divider__title">Galerías</h1>
-        <Slideshow imgs={gals} css={"gallery"} />
+      <h1 className="divider__title">Galerías</h1>
+      <Slideshow imgs={gals} css={"gallery"} />
     </m.section>
   );
 };
