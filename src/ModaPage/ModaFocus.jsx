@@ -1,10 +1,17 @@
 import React from "react";
 import "./ModaFocus.css";
 import { Instagram, LanguageOutlined } from "@mui/icons-material";
+import { motion as m } from "framer-motion";
 
 const ModaFocus = ({ products }) => {
   return (
-    <section id="modaFocus" className="top__section">
+    <m.section
+      initial={{ y: "100%" }}
+      animate={{ y: 0, transition: { duration: 1, delay: 0.5 } }}
+      exit={{ y: "100%", transition: { duration: 0.5 } }}
+      id="modaFocus"
+      className="top__section"
+    >
       <div className="modaFocus__container container top__container">
         <div className="modaFocus__row row">
           {products.map((product) => (
@@ -40,7 +47,7 @@ const ModaFocus = ({ products }) => {
           ))}
         </div>
       </div>
-    </section>
+    </m.section>
   );
 };
 

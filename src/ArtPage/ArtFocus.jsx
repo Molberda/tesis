@@ -9,13 +9,20 @@ import {
   ListAltOutlined,
   StarBorderOutlined,
 } from "@mui/icons-material";
+import { motion as m } from "framer-motion";
 
 const ArtFocus = () => {
   const { id } = useParams();
   const project = ArtData.find((i) => i.id === +id);
 
   return (
-    <section id="artFocus" className="top__section">
+    <m.section
+      initial={{ scale: 0 }}
+      animate={{ scale: 1, transition: { duration: 1, delay: 0.5 } }}
+      exit={{ scale: 0, transition: { duration: 0.5 } }}
+      id="artFocus"
+      className="top__section"
+    >
       <div className="artFocus__container top__container container">
         <div className="artFocus__row row">
           <div className="artFocus__header">
@@ -55,7 +62,7 @@ const ArtFocus = () => {
           </div>
         </div>
       </div>
-    </section>
+    </m.section>
   );
 };
 

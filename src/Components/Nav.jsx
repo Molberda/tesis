@@ -18,13 +18,13 @@ const Nav = () => {
         </figure>
         <SearchBar />
         <div className="nav__shortcuts">
-          <Link to='/'>
+          <Link to={null}>
             <Button onClick={dev} endIcon={<ListAltOutlined />}><h1 className="navLink">Mi Lista</h1></Button>
           </Link>
-          <Link to='/'>
+          <Link to={null}>
             <Button onClick={dev} endIcon={<StarBorderOutlined />}><h1 className="navLink">Destacados</h1></Button>
           </Link>
-          <Link to='/'>
+          <Link to={null}>
             <Button onClick={dev} endIcon={<PersonOutline />}><h1 className="navLink">Iniciar Sesión</h1></Button>
           </Link>
         </div>
