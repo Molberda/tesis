@@ -7,6 +7,7 @@ import Moda from "../ModaPage/Moda";
 import ModaFocus from "../ModaPage/ModaFocus";
 import { ModaData } from "../Categories/Moda";
 import { AnimatePresence } from "framer-motion";
+import About from "../AboutPage/About";
 
 const AnimatedRoutes = () => {
 
@@ -22,6 +23,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<About />} />
         <Route path="/arte" element={<Art />} />
         <Route path="/arte/:id" element={<ArtFocus />} />
         <Route path="/moda" element={<Moda />} />

@@ -1,0 +1,26 @@
+.about__row {
+  /* max-width: 1600px; */
+  gap: 2em;
+}
+
+.about__img {
+  flex: 0.35;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  gap: 1em;
+}
+
+.about__text > h1 {
+  font-size: 2em;
+  color: var(--brown);
+}
+
+.about__text > p {
+  font-size: 1.3em;
+  color: var(--brown);
+  text-align: justify;
+}
