@@ -3,6 +3,7 @@ import Backdrop from "./Backdrop";
 import { motion as m } from "framer-motion";
 import "./Modal.css";
 import { Button } from "@mui/material";
+import table from "./benefits.png";
 
 const Modal = ({ handleClose, text }) => {
   const dropIn = {
@@ -10,7 +11,12 @@ const Modal = ({ handleClose, text }) => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.1, type: "spring", damping: 25, stiffness: 2000 },
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 25,
+        stiffness: 2000,
+      },
     },
     exit: { y: "100vh", opacity: 0 },
   };
@@ -23,7 +29,22 @@ const Modal = ({ handleClose, text }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-      ><Button onClick={handleClose}>close</Button></m.div>
+      >
+        <Button>
+          <h1>¡Suscribete!</h1>
+        </Button>
+        <figure className="modal__table">
+          <img src={table} alt="" />
+        </figure>
+        <h2>
+          Suscríbete y mantente informado sobre los mejores eventos de Bogotá,
+          recibe contenido exclusivo que de otra manera no podrán obtener.
+        </h2>
+        <p>
+          La membresía PRO incluye 8 días de prueba GRATIS para nuevos clientes.{" "}
+        </p>
+        <Button onClick={handleClose}>Cerrar</Button>
+      </m.div>
     </Backdrop>
   );
 };

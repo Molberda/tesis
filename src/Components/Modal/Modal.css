@@ -1,6 +1,6 @@
 .modal {
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 300px);
+  /* height: min(50%, 300px); */
 
   margin: auto;
   padding: 0 2em;
@@ -10,4 +10,12 @@
   flex-direction: column;
   background-color: var(--orange);
   z-index: 100;
+}
+
+.modal__table{
+    border: .1em solid black;
+}
+
+.modal > h2{
+    text-align: center;
 }
