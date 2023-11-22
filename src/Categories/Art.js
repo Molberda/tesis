@@ -2,15 +2,15 @@ import arte1Main from "../Assets/Arte1/Arte1Main.jpeg";
 import arte2Main from "../Assets/Arte2/Arte2Main.png";
 import arte3Main from "../Assets/Arte3/Arte3Main.jpeg";
 import arte4Main from "../Assets/Arte4/Arte4Main.jpeg";
-import arte2Aut from "../Assets/Arte2/Arte2Aut.jpeg";
-import arte3Aut from "../Assets/Arte3/Arte3Aut.jpg";
+// import arte2Aut from "../Assets/Arte2/Arte2Aut.jpeg";
+// import arte3Aut from "../Assets/Arte3/Arte3Aut.jpg";
 
 export const ArtData = [
   {
     id: 0,
     name: "Arrancar los Ojos",
-    artist1: "Gabriela Golder",
-    artist1Img: arte2Aut,
+    // artist1: "Gabriela Golder",
+    // artist1Img: arte2Aut,
     mainImg: arte2Main,
     addImg1: "",
     addImg2: "",
@@ -24,12 +24,12 @@ export const ArtData = [
   {
     id: 1,
     name: "Elegias al ruido y al tiempo",
-    artist1: "Abril Hurtado",
-    artist2: "Joaquin Restrepo",
-    artist3: "Jose Sanin",
-    artist4: "Miguel Angel Rojas",
-    artist5: "Sandra Rengifo",
-    artist6: "Santiago Reyes",
+    // artist1: "Abril Hurtado",
+    // artist2: "Joaquin Restrepo",
+    // artist3: "Jose Sanin",
+    // artist4: "Miguel Angel Rojas",
+    // artist5: "Sandra Rengifo",
+    // artist6: "Santiago Reyes",
     mainImg: arte1Main,
     addImg1: "",
     addImg2: "",
@@ -43,8 +43,8 @@ export const ArtData = [
   {
     id: 2,
     name: "Anima Hibrida",
-    artist1: "Maria Morales",
-    artist1Img: arte3Aut,
+    // artist1: "Maria Morales",
+    // artist1Img: arte3Aut,
     mainImg: arte3Main,
     addImg1: "",
     addImg2: "",
@@ -57,18 +57,18 @@ export const ArtData = [
   {
     id: 3,
     name: "Viceversa en el MAMBO",
-    artist1: "Ana Maria Devis",
-    artist1Img: '',
-    artist2: "Antonio Caro",
-    artist2Img: "",
-    artist3: "Beatriz Gonzalez",
-    artist3Img: "",
-    artist4: "Jose Alejandro Restrepo",
-    artist4Img: "",
-    artist5: "Adriana Marmorek",
-    artist5Img: "",
-    artist6: "Juan Emanuel Echavarria",
-    artist6Img: "",
+    // artist1: "Ana Maria Devis",
+    // artist1Img: '',
+    // artist2: "Antonio Caro",
+    // artist2Img: "",
+    // artist3: "Beatriz Gonzalez",
+    // artist3Img: "",
+    // artist4: "Jose Alejandro Restrepo",
+    // artist4Img: "",
+    // artist5: "Adriana Marmorek",
+    // artist5Img: "",
+    // artist6: "Juan Emanuel Echavarria",
+    // artist6Img: "",
     mainImg: arte4Main,
     addImg1: "",
     addImg2: "",

@@ -19,9 +19,17 @@
     position: absolute;
     left: .8em;
     bottom: .8em;
-    z-index: 5;
     font-size: 2em;
+    z-index: 5;
     letter-spacing: .1em;
     font-family: 'Caveat', cursive;
     color: var(--brown);
+}
+
+.artFocus__alter--polaroid{
+    width: calc((100% - 25em) / 3);
+}
+
+.artFocus__alter--polaroid > .frame__tag{
+    font-size: 1.8em;
 }
