@@ -24,3 +24,9 @@
   color: var(--brown);
   text-align: justify;
 }
+
+.about__text > ul > li {
+  font-size: 1.3em;
+  list-style: circle;
+  margin-left: 1em;
+}

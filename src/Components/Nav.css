@@ -23,9 +23,9 @@ nav {
   align-items: center;
   height: 100%;
   max-width: 1200px;
-  padding: 0 2em;
+  padding: 0 1em;
   margin: 0 auto;
-  gap: 1em;
+  gap: .5em;
 }
 
 .nav__icon:hover{
@@ -33,13 +33,13 @@ nav {
 }
 
 .nav__icon > img {
-  width: 8em;
+  width: 6em;
 }
 
 .nav__searchBar {
   display: flex;
   align-items: center;
-  flex: 0.45;
+  flex: 0.1;
   height: 2.5em;
   background-color: var(--white);
   border-radius: 10em;
@@ -69,7 +69,7 @@ nav {
 .nav__shortcuts {
   display: flex;
   gap: 0.5em;
-  flex: 0.55;
+  flex: 0.9;
 }
 
 .nav__shortcuts > a > button {

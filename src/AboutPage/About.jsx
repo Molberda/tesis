@@ -30,9 +30,13 @@ const About = () => {
               diseño, teatro y cine para que nos mantengamos informados y
               podamos vivir experiencias que nos hagan salir de la rutina.
             </p>
-            <h1>Mision:</h1>
-            <h1>Vision:</h1>
             <h1>Valores:</h1>
+            <ul>
+              <li>Diversidad Cultural</li>
+              <li>Colaboración</li>
+              <li>Innovación</li>
+              <li>Comunidad</li>
+            </ul>
           </div>
         </div>
       </div>

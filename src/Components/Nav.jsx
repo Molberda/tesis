@@ -37,6 +37,16 @@ const Nav = ({ modalOpen, setModalOpen }) => {
             </Button>
           </Link>
           <Link to={null}>
+            <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+              <h1 className="navLink">Filtros</h1>
+            </Button>
+          </Link>
+          <Link to={null}>
+            <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+              <h1 className="navLink">Guias</h1>
+            </Button>
+          </Link>
+          <Link to={null}>
             <Button
               onClick={() => (modalOpen ? close() : open())}
               endIcon={<PersonOutline />}
