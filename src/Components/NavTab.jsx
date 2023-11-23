@@ -15,7 +15,7 @@ const NavTab = () => {
         <NavBtn name="moda" link="/moda" />
         <NavBtn name="diseño" link="/" deve={true}/>
         <NavBtn name="teatro" link="/" deve={true}/>
-        <NavBtn name="musica" link="/" deve={true}/>
+        <NavBtn name="música" link="/" deve={true}/>
         {/* <NavBtn name="diseno" link="/diseno" />
         <NavBtn name="teatro" link="/teatro" />
         <NavBtn name="musica" link="/musica" /> */}

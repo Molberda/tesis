@@ -32,7 +32,7 @@ const Moda = () => {
         <figure className="moda__img" onClick={() => navTo("/moda/joyeria")}>
           <img src={joy} alt="" />
           <div className="moda__hover">
-            <h1>Joyeria</h1>
+            <h1>Joyería</h1>
           </div>
         </figure>
         <figure className="moda__img" onClick={() => navTo("/moda/hombres")}>

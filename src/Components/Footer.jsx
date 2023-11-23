@@ -30,7 +30,7 @@ const Footer = ({  modalOpen, setModalOpen }) => {
             <div className="footer__hover--effect"></div>
           </li>
           <li>
-            <Link to={"/musica"}>Musica</Link>
+            <Link to={"/musica"}>Música</Link>
             <div className="footer__hover--effect"></div>
           </li>
         </div>

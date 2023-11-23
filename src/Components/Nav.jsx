@@ -51,7 +51,7 @@ const Nav = ({ modalOpen, setModalOpen }) => {
           </Link>
           <Link to={null}>
             <Button onClick={dev} endIcon={<SearchOutlined />}>
-              <h1 className="navLink">Guias</h1>
+              <h1 className="navLink">Guías</h1>
             </Button>
           </Link>
           <Link to={null}>
