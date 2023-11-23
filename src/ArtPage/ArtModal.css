@@ -13,12 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 15;
+    z-index: 99;
   }
 
   .artModal{
     position: fixed;
-    width: clamp(50%, 700px, 90%);
+    width: 70%;
     /* height: min(50%, 300px); */
     margin: auto;
     padding: 1em 2em;

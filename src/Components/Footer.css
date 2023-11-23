@@ -106,3 +106,8 @@ footer :is(h1) {
   align-items: center;
   gap: .25em;
 }
+
+
+.modalOpen :is(footer){
+  opacity: 0;
+}

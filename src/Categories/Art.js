@@ -17,7 +17,7 @@ import arte3Add5 from "../Assets/Arte3/arte3Add5.jpeg";
 import arte4Main from "../Assets/Arte4/Arte4Main.jpeg";
 import arte4Add1 from "../Assets/Arte4/arte4Add1.jpeg";
 import arte4Add2 from "../Assets/Arte4/arte4Add2.jpeg";
-import arte4Add3 from "../Assets/Arte4/arte4Add3.jpeg";
+import arte4Add3 from "../Assets/Arte4/arte4Add3.jpg";
 import arte4Add4 from "../Assets/Arte4/arte4Add4.jpg";
 import arte4Add5 from "../Assets/Arte4/arte4Add5.jpg";
 import arte4Add6 from "../Assets/Arte4/arte4Add6.jpg";

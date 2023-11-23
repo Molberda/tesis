@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ArtFocus.css";
 import { useParams } from "react-router-dom";
 import { ArtData } from "../Categories/Art";
@@ -11,8 +11,9 @@ import {
 } from "@mui/icons-material";
 import { motion as m } from "framer-motion";
 import { artistsData } from "../Categories/Artists";
+import ArtModal from "./ArtModal";
 
-const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
+const ArtFocus = () => {
   const dev = () => alert("esta funcion todavia esta en desarrollo");
 
   const { id } = useParams();
@@ -21,10 +22,11 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
   const artists = artistsData.find((i) => i.id === +id);
   const artF = artists.artists;
 
+  const [artModalOpen, setArtModalOpen] = useState(false);
+
   const openArt = () => {
     document.body.classList += " modalOpen";
     setArtModalOpen(true);
-    console.log("workign");
   };
 
   const closeArt = () => {
@@ -47,8 +49,12 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
             <div className="artFocus__btns">
               <Button onClick={dev}>Reseñas</Button>
               <Button onClick={dev}>Faq</Button>
-              <Button onClick={dev} endIcon={<StarBorderOutlined />}>Puntuar</Button>
-              <Button onClick={dev} endIcon={<StarBorderOutlined />}>Puntuacion</Button>
+              <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+                Puntuar
+              </Button>
+              <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+                Puntuacion
+              </Button>
             </div>
           </div>
           {artF.length > 1 ? (
@@ -58,7 +64,10 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
                   <img src={project.mainImg} alt="" />
                 </figure>
                 <div className="artFocus__gallery--btns">
-                  <Button onClick={() => (artModalOpen ? closeArt() : openArt())} endIcon={<ImageOutlined />}>
+                  <Button
+                    onClick={() => (artModalOpen ? closeArt() : openArt())}
+                    endIcon={<ImageOutlined />}
+                  >
                     <h1>Imagenes</h1>
                   </Button>
                   <Button onClick={dev}>
@@ -83,6 +92,9 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
                   />
                 ))}
               </div>
+              {artModalOpen && (
+                <ArtModal imgs={project.addImgs} modalOpen={artModalOpen} handleClose={closeArt} />
+              )}
             </div>
           ) : (
             <>
@@ -98,7 +110,10 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
                   <img src={project.mainImg} alt="" />
                 </figure>
                 <div className="artFocus__gallery--btns">
-                  <Button onClick={() => (artModalOpen ? closeArt() : openArt())} endIcon={<ImageOutlined />}>
+                  <Button
+                    onClick={() => (artModalOpen ? closeArt() : openArt())}
+                    endIcon={<ImageOutlined />}
+                  >
                     <h1>Imagenes</h1>
                   </Button>
                   <Button onClick={dev}>
@@ -114,6 +129,9 @@ const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
                   Agregar a Mi Lista
                 </Button>
               </div>
+              {artModalOpen && (
+                <ArtModal imgs={project.addImgs} modalOpen={artModalOpen} handleClose={closeArt} />
+              )}
             </>
           )}
         </div>

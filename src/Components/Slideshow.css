@@ -70,3 +70,11 @@
     opacity: 1;
 }
 
+.slideshow__add--organizer{
+    width: 100%;
+}
+
+.addSlideshow__img{
+    min-width: 35em;
+}
+

@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import { Facebook, Instagram, TurnedInNotOutlined } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Footer = () => {
+const Footer = ({  modalOpen, setModalOpen }) => {
   const dev = () => alert("esta funcion todavia esta en desarrollo");
 
   return (
@@ -35,7 +35,7 @@ const Footer = () => {
           </li>
         </div>
         <div className="footer__sub">
-          <Button endIcon={<TurnedInNotOutlined />}>
+          <Button onClick={() => modalOpen ? setModalOpen(false) : setModalOpen(true)} endIcon={<TurnedInNotOutlined />}>
             <h1>¡Suscribete!</h1>
           </Button>
           <p>

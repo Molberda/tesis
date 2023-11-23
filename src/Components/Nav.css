@@ -139,3 +139,7 @@ nav {
   font-size: 1em;
   font-weight: normal;
 }
+
+.modalOpen :is(.nav__background,nav,.nav__tab){
+  z-index: 1;
+}

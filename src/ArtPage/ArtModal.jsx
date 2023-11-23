@@ -2,13 +2,9 @@ import React from "react";
 import { motion as m } from "framer-motion";
 import "./ArtModal.css";
 import ArtBackdrop from "./ArtBackdrop";
-import { useParams } from "react-router-dom";
-import { ArtData } from "../Categories/Art";
 import Slideshow from "../Components/Slideshow";
 
-const ArtModal = ({ handleClose }) => {
-  const { id } = useParams();
-  const project = ArtData.find((i) => i.id === +id);
+const ArtModal = ({ handleClose, imgs }) => {
   const dropIn = {
     hidden: { y: "-100vh", opacity: 0 },
     visible: {
@@ -33,7 +29,8 @@ const ArtModal = ({ handleClose }) => {
         animate="visible"
         exit="exit"
       >
-        <Slideshow imgs={ArtData}/>
+
+        <Slideshow imgs={imgs} css={'add'}/>
       </m.div>
     </ArtBackdrop>
   );
