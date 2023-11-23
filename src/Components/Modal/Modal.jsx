@@ -50,6 +50,7 @@ const Modal = ({ handleClose }) => {
         <p>
           La membresía PRO incluye 8 días de prueba GRATIS para nuevos clientes.
         </p>
+        <Button onClick={dev}><h1>Pauta tu Evento</h1></Button>
       </m.div>
     </Backdrop>
   );

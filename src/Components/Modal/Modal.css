@@ -33,7 +33,9 @@
     border: none;
 }
 
-.sub__org > button::before{
+.sub__org > button::before,
+.modal > button::before
+{
     content: '';
     position: absolute;
     width: 100%;
@@ -43,7 +45,8 @@
     opacity: 1;
 }
 
-.sub__org > button > h1
+.sub__org > button > h1,
+.modal > button > h1
 {
     font-size: 1.5em;
     color: var(--orange);
