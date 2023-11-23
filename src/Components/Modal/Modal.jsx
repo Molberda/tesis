@@ -6,7 +6,6 @@ import { Button } from "@mui/material";
 import table from "./benefits.png";
 
 const Modal = ({ handleClose }) => {
-
   const dev = () => alert("esta funcion todavia esta en desarrollo");
 
   const dropIn = {
@@ -34,9 +33,12 @@ const Modal = ({ handleClose }) => {
         animate="visible"
         exit="exit"
       >
-        <Button onClick={dev}>
-          <h1>¡Suscribete!</h1>
-        </Button>
+        <div className="sub__org">
+          <input type="email" required />
+          <Button onClick={dev}>
+            <h1>¡Suscribete!</h1>
+          </Button>
+        </div>
         <figure className="modal__table">
           <img src={table} alt="" />
         </figure>

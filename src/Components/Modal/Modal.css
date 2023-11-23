@@ -18,7 +18,12 @@
   gap: 1em;
 }
 
-.modal > button::before{
+.sub__org{
+    display: flex;
+    gap: 1em;
+}
+
+.sub__org > button::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -28,8 +33,8 @@
     opacity: 1;
 }
 
-.modal > button > h1,
-.modal > button > h2{
+.sub__org > button > h1{
+    font-size: 1em;
     color: var(--orange);
 }
 
@@ -40,11 +45,6 @@
 
 .modal > h2{
     text-align: center;
-}
-
-.modal > button > h2{
-    font-size: 1.2em;
-    letter-spacing: .15em;
 }
 
 .modal > p{

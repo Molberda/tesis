@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   ListAltOutlined,
   PersonOutline,
+  SearchOutlined,
   StarBorderOutlined,
 } from "@mui/icons-material";
 import { Button } from "@mui/material";
@@ -44,12 +45,12 @@ const Nav = ({ modalOpen, setModalOpen }) => {
             </Button>
           </Link>
           <Link to={null}>
-            <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+            <Button onClick={dev} endIcon={<ListAltOutlined />}>
               <h1 className="navLink">Filtros</h1>
             </Button>
           </Link>
           <Link to={null}>
-            <Button onClick={dev} endIcon={<StarBorderOutlined />}>
+            <Button onClick={dev} endIcon={<SearchOutlined />}>
               <h1 className="navLink">Guias</h1>
             </Button>
           </Link>
