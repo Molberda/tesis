@@ -11,7 +11,7 @@
     position: absolute;
     width: 85%;
     min-height: 75%;
-    max-height: 90%;
+    max-height: 85%;
     top: 1.5em;
     left: 1.5em;
 }
@@ -32,6 +32,6 @@
 }
 
 .artFocus__alter--polaroid > .frame__tag{
-    font-size: 1.5em;
+    font-size: 1.25em;
     bottom: 1em;
 }

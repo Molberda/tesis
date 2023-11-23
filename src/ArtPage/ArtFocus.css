@@ -57,7 +57,7 @@
 .alter .artFocus__gallery--portraits{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 4em;
 }
 /* .artFocus__gallery::before{

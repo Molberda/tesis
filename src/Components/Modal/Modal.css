@@ -1,4 +1,10 @@
+.modalOpen{
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 .modal {
+    position: fixed;
   width: clamp(50%, 700px, 90%);
   /* height: min(50%, 300px); */
   margin: auto;
@@ -29,6 +35,7 @@
 
 .modal__table{
     border: .1em solid black;
+    width: 65%;
 }
 
 .modal > h2{

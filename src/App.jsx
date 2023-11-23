@@ -10,7 +10,10 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
-  const close = () => setModalOpen(false);
+  const close = () => {
+    document.body.classList.remove('modalOpen')
+    setModalOpen(false)
+  }
 
   return (
     <Router>

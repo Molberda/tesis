@@ -15,8 +15,15 @@ const Nav = ({ modalOpen, setModalOpen }) => {
   const navTo = useNavigate();
   const dev = () => alert("esta funcion todavia esta en desarrollo");
 
-  const open = () => setModalOpen(true);
-  const close = () => setModalOpen(false);
+  const open = () =>{
+    document.body.classList += ' modalOpen'
+     setModalOpen(true)
+    };
+
+  const close = () => {
+    document.body.classList.remove('modalOpen')
+    setModalOpen(false)
+  }
 
   return (
     <div className="nav__background">
