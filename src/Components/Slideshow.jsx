@@ -27,6 +27,9 @@ const Slideshow = ({ imgs, css }) => {
               className={`slideshow__img ${css}Slideshow__img`}
             >
               <img src={img.img} alt="" />
+              <div className={`${css}Slideshow__hover-effect`}>
+                <h1>{img.name}</h1>
+              </div>
             </m.figure>
           ))}
         </m.div>

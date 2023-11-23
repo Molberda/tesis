@@ -18,6 +18,7 @@
 }
 
 .slideshow__img{
+    position: relative;
     padding: 1em;
 }
 
@@ -49,3 +50,23 @@
         transform: translateX(-4em);
     }
 }
+
+.multiSlideshow__hover-effect{
+    box-sizing: content-box;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    border-radius: 1em;
+    display: flex;align-items: center;justify-content: center;
+    color: var(--white);
+    background-color: #242424a0;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.multiSlideshow__img:hover .multiSlideshow__hover-effect{
+    opacity: 1;
+}
+
