@@ -23,6 +23,16 @@
     gap: 1em;
 }
 
+.sub__input{
+    font-size: 1.3em;
+    background-color: transparent;
+    color: var(--white);
+    outline: .1em solid var(--white);
+    border-radius: .5em;
+    padding: .25em .75em;
+    border: none;
+}
+
 .sub__org > button::before{
     content: '';
     position: absolute;
@@ -33,17 +43,23 @@
     opacity: 1;
 }
 
-.sub__org > button > h1{
-    font-size: 1em;
+.sub__org > button > h1
+{
+    font-size: 1.5em;
+    color: var(--orange);
+}
+.sub__org > button > span > svg{
+    font-size: 2em !important;    
     color: var(--orange);
 }
 
 .modal__table{
     border: .1em solid black;
-    width: 65%;
+    width: 55%;
 }
 
 .modal > h2{
+    font-size: 1.25em;
     text-align: center;
 }
 
