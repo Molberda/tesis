@@ -14,7 +14,7 @@ export const MultiData = [
     },
     {
         id: 1,
-        name: 'Ba Hue',
+        name: 'Ba Hué',
         img: mul2,
     },
     {

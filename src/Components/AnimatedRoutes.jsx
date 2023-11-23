@@ -9,7 +9,8 @@ import { ModaData } from "../Categories/Moda";
 import { AnimatePresence } from "framer-motion";
 import About from "../AboutPage/About";
 
-const AnimatedRoutes = () => {
+const AnimatedRoutes = ({ artModalOpen, setArtModalOpen }) => {
+  
 
   const location = useLocation()
 
@@ -25,7 +26,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<About />} />
         <Route path="/arte" element={<Art />} />
-        <Route path="/arte/:id" element={<ArtFocus />} />
+        <Route path="/arte/:id" element={<ArtFocus artModalOpen={artModalOpen} setArtModalOpen={setArtModalOpen} />} />
         <Route path="/moda" element={<Moda />} />
         <Route path="/moda/accesorios" element={<ModaFocus products={acc} />} />
         <Route path="/moda/apparel" element={<ModaFocus products={apa} />} />

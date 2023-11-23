@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./ArtFocus.css";
 import { useParams } from "react-router-dom";
 import { ArtData } from "../Categories/Art";
@@ -12,15 +12,25 @@ import {
 import { motion as m } from "framer-motion";
 import { artistsData } from "../Categories/Artists";
 
-const ArtFocus = () => {
+const ArtFocus = ({ artModalOpen, setArtModalOpen }) => {
+  const dev = () => alert("esta funcion todavia esta en desarrollo");
+
   const { id } = useParams();
   const project = ArtData.find((i) => i.id === +id);
 
   const artists = artistsData.find((i) => i.id === +id);
   const artF = artists.artists;
-  useEffect(() => {
-    console.log(artF[0]);
-  }, []);
+
+  const openArt = () => {
+    document.body.classList += " modalOpen";
+    setArtModalOpen(true);
+    console.log("workign");
+  };
+
+  const closeArt = () => {
+    document.body.classList.remove("modalOpen");
+    setArtModalOpen(false);
+  };
 
   return (
     <m.section
@@ -35,10 +45,10 @@ const ArtFocus = () => {
           <div className="artFocus__header">
             <h1>{project.name}</h1>
             <div className="artFocus__btns">
-              <Button>Reseñas</Button>
-              <Button>Faq</Button>
-              <Button endIcon={<StarBorderOutlined />}>Puntuar</Button>
-              <Button endIcon={<StarBorderOutlined />}>Puntuacion</Button>
+              <Button onClick={dev}>Reseñas</Button>
+              <Button onClick={dev}>Faq</Button>
+              <Button onClick={dev} endIcon={<StarBorderOutlined />}>Puntuar</Button>
+              <Button onClick={dev} endIcon={<StarBorderOutlined />}>Puntuacion</Button>
             </div>
           </div>
           {artF.length > 1 ? (
@@ -48,19 +58,22 @@ const ArtFocus = () => {
                   <img src={project.mainImg} alt="" />
                 </figure>
                 <div className="artFocus__gallery--btns">
-                  <Button endIcon={<ImageOutlined />}>
+                  <Button onClick={() => (artModalOpen ? closeArt() : openArt())} endIcon={<ImageOutlined />}>
                     <h1>Imagenes</h1>
                   </Button>
-                  <Button>
+                  <Button onClick={dev}>
                     <h1>Adicional</h1>
                   </Button>
                 </div>
-              </div> <div className="artFocus__text">
-            <h2>{project.subtitle}</h2>
-            <p>{project.description1}</p>
-            <p>{project.description2}</p>
-            <Button endIcon={<ListAltOutlined />}>Agregar a Mi Lista</Button>
-          </div>
+              </div>{" "}
+              <div className="artFocus__text">
+                <h2>{project.subtitle}</h2>
+                <p>{project.description1}</p>
+                <p>{project.description2}</p>
+                <Button onClick={dev} endIcon={<ListAltOutlined />}>
+                  Agregar a Mi Lista
+                </Button>
+              </div>
               <div className="artFocus__gallery--portraits">
                 {artF.map((i) => (
                   <Polaroid
@@ -85,10 +98,10 @@ const ArtFocus = () => {
                   <img src={project.mainImg} alt="" />
                 </figure>
                 <div className="artFocus__gallery--btns">
-                  <Button endIcon={<ImageOutlined />}>
+                  <Button onClick={() => (artModalOpen ? closeArt() : openArt())} endIcon={<ImageOutlined />}>
                     <h1>Imagenes</h1>
                   </Button>
-                  <Button>
+                  <Button onClick={dev}>
                     <h1>Adicional</h1>
                   </Button>
                 </div>
@@ -97,7 +110,7 @@ const ArtFocus = () => {
                 <h2>{project.subtitle}</h2>
                 <p>{project.description1}</p>
                 <p>{project.description2}</p>
-                <Button endIcon={<ListAltOutlined />}>
+                <Button onClick={dev} endIcon={<ListAltOutlined />}>
                   Agregar a Mi Lista
                 </Button>
               </div>
